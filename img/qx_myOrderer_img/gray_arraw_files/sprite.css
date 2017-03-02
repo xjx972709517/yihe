@@ -1,0 +1,91 @@
+i {display: inline-block;background: url(../img/icons.png) no-repeat 0 0;}
+/*下拉黑三角*/
+i.down_arrow { width: 20px; height: 14px; background-position: 6px 6px; vertical-align: middle;}
+/*下拉黑实三角*/
+i.down_arrow2 { width: 18px; height: 14px; background-position: 6px -110px;}
+/*放大镜*/
+i.search_btn {width: 46px; height: 34px; background-position: 11px -222px;}
+/*红色用户*/
+i.user { width: 24px; height: 28px; background-position: 1px -15px;vertical-align: middle}
+i.user_seller {width: 16px;height:17px;background-position:0px -17px;}
+/*灰色电话*/
+i.phone_gray{ width: 16px; height: 16px; background-position: 1px -54px;vertical-align: middle;}
+/*购物车*/
+i.shopping_cart { width: 24px; height: 28px; background-position: 1px -75px;vertical-align: middle;}
+/*聊天框*/
+i.shopping_count { width: 22px; height: 22px; background-position: 0 -140px;}
+/*支付宝*/
+i.Alipay{background-position: -298px -80px;width: 133px;height: 40px;}
+/*微信支付*/
+i.WeChat{background-position: -298px -149px;width: 133px;height: 40px;}
+/*银联支付*/
+i.UnionPay{background-position: -298px -220px;width: 133px;height: 40px;}
+/*余额支付*/
+i.BalancePay{background-position: -298px -281px;width: 133px;height: 40px;}
+/*小加号*/
+.small_plus{width: 20px;height: 20px;background-position: -55px -129px;}
+.small_minus{width: 20px;height: 20px;background-position: -55px -173px;}
+/*蓝色上拉*/
+i.blue_up{width: 20px;height: 20px;background-position: -340px -393px;}
+/*蓝色下拉*/
+i.blue_down{width: 20px;height: 20px;background-position: -340px -376px;}
+/*-------------下拉框----------------*/
+/*下拉白三角*/
+i.classes { width: 30px; height: 30px; background-position: 6px -176px; }
+/*右向箭头-灰*/
+i.right_arrow_gray { width: 50px; height: 50px; background-position: 25px -444px; vertical-align: middle;}
+/*右向箭头-白*/
+i.right_arrow_white{width: 50px; height: 50px;background-position:25px -400px;vertical-align: middle;}
+/*白色实心三角向上*/
+i.top_arrow_white{ width:13px;height:9px;background-position: -473px -110px;}
+/*------------五角星----------------*/
+/*空心五角星*/
+i.coll {width: 30px; height: 30px; background-position: -60px -76px; }
+/*实心红五角星*/
+i.checked {width: 30px;height: 30px; background-position: -58px -34px;}
+/*白色企鹅*/
+i.server {width: 30px; height: 26px; background-position: -58px 2px;vertical-align: bottom}
+/*白色企鹅*/
+i.server_blue {width: 20px; height: 20px; background: url(../img/xx.png) no-repeat -58px 2px;vertical-align:text-bottom}
+/*红色手机*/
+i.phone { width: 30px; height: 30px; background-position: -49px -257px;}
+/*红色扁手机*/
+i.phone1{width:16px; height: 17px;background-position: -204px -52px;}
+/*红色微信*/
+i.code {vertical-align: -30%; width: 30px; height: 30px; background-position: -54px -215px;}
+/*灰色五角星*/
+i.star_item{ height: 30px; width: 30px; background-position: -55px -311px;}
+/*空心对号*/
+i.bomb_mark{width: 40px; height: 40px; background-position: -224px -447px;}
+/*------------body------------*/
+i.book{background-position: -356px 0px;width: 31px;height: 31px;}
+/*小汽车*/
+i.car{height:30px; width:30px; background-position: -204px -123px;}
+/*楼房*/
+i.hotel{height:30px; width:30px;background-position: -204px -192px;}
+/*楼房下小人*/
+i.boy{height:30px; width:30px;background-position: -204px -259px;}
+/*三角尺*/
+i.build{height:30px; width:30px;background-position: -206px -327px;}
+/*定位*/
+i.address{width:16px; height: 17px;background-position: -204px -83px;}
+/*申请入驻*/
+i.arrow1{width: 32px;height: 42px;background-position: -255px -144px;}
+i.arrow2{width: 32px;height: 42px;background-position: -255px -220px;}
+i.arrow3{width: 32px;height: 42px;background-position: -253px -272px;}
+/*---------登录页面---------*/
+i.wechat{background-position: -159px -453px;width: 35px;height: 35px;}
+i.qq{width: 35px;height: 35px; background-position: -159px -402px;}
+i.login_error{width: 20px;height: 25px; background-position: -253px -90px; vertical-align: middle;}
+i.login_right{width: 20px;height: 20px;background-position: -248px -53px;display:inline-block;margin: 8px 8px 0 0;}
+i.blue_user{width: 15px;height: 17px; background-position: -250px -24px;margin: 10px 0 0 5px;}
+/*------foot----------*/
+i.ele1{width: 45px; height:45px;background-position: -116px -250px;}
+i.ele2{width: 45px; height:45px;background-position: -116px -333px;}
+i.ele3{width: 45px; height:45px;background-position: -116px -172px;}
+i.ele4{width: 45px; height:45px;background-position: -116px -92px;}
+i.ele5{width: 45px; height:45px;background-position: -116px -28px;}
+/*其他*/
+i.mark{width:49px;height:61px;background-position: -55px -413px}
+i.arrow_big_left{width:28px;height:60px;background-position: 7px -273px}
+i.arrow_big_right{width:28px;height:60px;background-position: 7px -337px}

@@ -1,0 +1,259 @@
+body {
+	cursor: default;
+}
+#footer,#header {
+	min-width: 1200px;
+}
+.pointer {
+	cursor: pointer;
+}
+.cart_con .container {
+	margin: 27px auto 40px;
+	border: 1px solid #d3d3d3;
+	min-width: 1200px;
+}
+.cart_wrap {
+	padding: 40px;
+}
+.cart_img {
+	height: 120px;
+	border-bottom: 1px solid #d3d3d3;
+	display: flex;
+	justify-content: space-between;
+}
+.cart_img img {
+	width: 140px;
+	height: 80px;
+}
+/*订单状态(三部)*/
+.cart_step {
+	width: 724px;
+	height: 44px;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+.cart_step span {
+	width: 210px;
+	line-height: 44px;
+	text-align: center;
+	font-size: 18px;
+	color: #333;
+	margin-left: 20px;
+	position: relative;
+	background-color: #e5e5e5;
+}
+.cart_step span:before,.cart_step span:after {
+    content: "";
+    display: inline-block;
+	position: absolute;
+    width: 0;
+    height: 0;
+}
+#cart_sure:before,#cart_order:before {
+	border: 22px solid #e5e5e5;
+    left: -22px;
+    border-left-color: transparent;
+}
+#cart_me:after,#cart_sure:after {
+	border: 22px solid transparent;
+	right: -44px;
+    border-left-color: #e5e5e5;
+}
+#cart_me.active,#cart_sure.active,#cart_order.active {
+	background-color: #ff6c00;
+}
+#cart_me.active:after {
+    border-left-color: #ff6c00;
+}
+#cart_sure.active:before {
+	border: 22px solid #ff6c00;
+    left: -22px;
+    border-left-color: transparent;
+}
+#cart_sure.active:after {
+	border: 22px solid transparent;
+	right: -44px;
+    border-left-color: #ff6c00;
+}
+#cart_order.active:before {
+	border: 22px solid #ff6c00;
+    left: -22px;
+    border-left-color: transparent;
+}
+/*提交订单样式*/
+.cart_tijiao {
+	height: 370px;
+}
+.order_submit {
+	text-align: center;
+	height: 320px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.order_submit>img {
+	margin: 0 auto;
+	width: 78px;
+	height: 78px;
+}
+.order_submit>p {
+	font-size: 24px;
+}
+.order_submit>p>span {
+	color: #ff6c00;
+}
+.order_address {
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 1px solid #d3d3d3;
+	background-color: #fff3ec;
+}
+.order_address .glyphicon {
+	font-size: 14px;
+	padding: 0 10px;
+	color: #008de1;
+}
+.myAddress>span {
+	margin-right: 5px;
+}
+.cart_zhifu {
+	font-size: 18px;
+}
+.order_jine {
+	height: 70px;
+	line-height: 70px;
+}
+.order_pay {
+	font-size: 24px;
+	color: #ff6c00;
+}
+.order_num {
+	float: right;
+	font-size: 14px;
+}
+.order_text {
+	height: 58px;
+	line-height: 58px;
+	border-bottom: 1px solid #e9e9e9;
+}
+.order_method {
+	padding: 40px 0;
+	border-bottom: 1px solid #e9e9e9;
+}
+.cart_zhifu .order_method>.radio {
+	margin: 0;
+	display: inline-block;
+}
+.order_method .radio input {
+	outline: none;
+	margin-top: 12px;
+}
+.order_method .radio img {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 38px;
+}
+.order_way1,.order_way2 {
+	height: 400px;
+	font-size: 18px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom: 1px solid #e9e9e9;
+	position: relative;
+}
+.order_way1 {
+	margin-bottom: 70px;
+}
+.order_diannao,.order_zhifubao,.order_weixin {
+	height: 276px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.order_payBtn {
+	display: block;
+	height: 45px;
+	width: 170px;
+	line-height: 45px;
+	text-align: center;
+	color: white;
+	background-color: #ec6a17;
+	border-radius: 5px;
+}
+.order_huo,.order_line {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.order_line {
+	width: 1px;
+	height: 276px;
+	background-color: #e9e9e9;
+}
+/*弹出框*/
+.order_pop {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,.5);
+	display: none;
+}
+.order_pingtai {
+	width: 658px;
+	height: 440px;
+	border: 5px solid #e2e2e2;
+	text-align: center;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.order_title {
+	margin-top: 100px;
+	font-size: 30px;
+	color: #ec6a17;
+}
+.order_info {
+	height: 150px;
+	line-height: 150px;
+	font-size: 18px;
+}
+.order_btn {
+	width: 400px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.order_btn>span {
+	display: block;
+	height: 72px;
+	width: 170px;
+	border-radius: 5px;
+	font-size: 18px;
+	color: white;
+}
+.order_btn>span>p {
+	margin: 0;
+}
+.order_btn>span>p:first-child {
+	margin-top: 10px;
+}
+.order_btn>span>p:last-child {
+	font-size: 14px;
+	line-height: 30px;
+}
+.order_yesBtn {
+	background-color: #ec6a17;
+}
+.order_noBtn {
+	background-color: #999;
+}

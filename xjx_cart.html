@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/xjx_cart.css"/>
+	</head>
+	<body>
+		<div id="header"></div>
+		
+		<div class="cart_con">
+			<div class="container">
+				<div class="cart_wrap">
+					<div class="cart_img">
+						<img src="img/xjx/cart/xjx_yiheimg.png"/>
+						<span class="cart_step">
+							<span id="cart_me" class="active">我的购物车</span>
+							<span id="cart_sure">确认订单信息</span>
+							<span id="cart_order">订单提交成功</span>
+						</span>
+					</div>
+					<div class="cart_cart">
+						<div class="cart_header">
+							<img src="img/xjx/cart/xjx_cartS.png"/>
+							<span>购物车</span>
+						</div>
+						<div class="cart_goods">
+							<div class="cart_none">
+								<div class="cart_kong">
+									<img src="img/xjx/cart/xjx_cartB.png"/>
+									<span class="cart_btn">
+										<span>您的购物车是空的</span>
+										<span class="cart_home pointer">去首页看看</span>
+									</span>
+								</div>
+							</div>
+							<div class="goods_cart">
+								<div class="goods_shop shuju_die">
+									<table class="table" id="goods_every">
+										<tr class="active goods_title">
+											<th class="goods_select">
+												<div>
+													<img class="pointer" src="img/xjx/cart/xjx_no.png"/>
+													<span>海澜之家旗舰店</span>
+												</div>
+											</th>
+											<th>规格</th>
+											<th>单价</th>
+											<th>数量</th>
+											<th>金额</th>
+											<th>操作</th>
+										</tr>
+										<tr class="goods_goods">
+											<td class="goods_select emptySelect">
+												<div>
+													<img class="pointer" src="img/xjx/cart/xjx_no.png"/>
+													<img src="img/xjx/cart/xjx_goods.png"/>
+													<span>《寻龙诀》北京保利龙旗广场</span>
+												</div>
+											</td>
+											<td class="goods_style">
+												<p>版本：国行 32G</p>
+												<p>颜色：星钻黑</p>
+											</td>
+											<td class="price_one">
+												<p>￥<span>35.0</span></p>
+											</td>
+											<td class="goods_counts">
+												<div>
+													<span class="goods_jian pointer">−</span>
+													<input type="text" value="1" />
+													<span class="goods_jia pointer">+</span>
+												</div>
+											</td>
+											<td class="price_some">
+												<p>￥<span>35.0</span></p>
+											</td>
+											<td class="delete_this">
+												<a class="goods_shanchu pointer" href="javascript:;">删除</a>
+											</td>
+										</tr>
+										<tr class="goods_goods">
+											<td class="goods_select emptySelect">
+												<div>
+													<img class="pointer" src="img/xjx/cart/xjx_no.png"/>
+													<img src="img/xjx/cart/xjx_goods.png"/>
+													<span>《寻龙诀》北京保利龙旗广场</span>
+												</div>
+											</td>
+											<td class="goods_style">
+												<p>版本：国行 32G</p>
+												<p>颜色：星钻黑</p>
+											</td>
+											<td class="price_one">
+												<p>￥<span>35.0</span></p>
+											</td>
+											<td class="goods_counts">
+												<div>
+													<span class="goods_jian pointer">−</span>
+													<input type="text" value="1" />
+													<span class="goods_jia pointer">+</span>
+												</div>
+											</td>
+											<td class="price_some">
+												<p>￥<span>35.0</span></p>
+											</td>
+											<td class="delete_this">
+												<a class="goods_shanchu pointer" href="javascript:;">删除</a>
+											</td>
+										</tr>
+										<tr class="goods_goods">
+											<td class="goods_select emptySelect">
+												<div>
+													<img class="pointer" src="img/xjx/cart/xjx_no.png"/>
+													<img src="img/xjx/cart/xjx_goods.png"/>
+													<span>《寻龙诀》北京保利龙旗广场</span>
+												</div>
+											</td>
+											<td class="goods_style">
+												<p>版本：国行 32G</p>
+												<p>颜色：星钻黑</p>
+											</td>
+											<td class="price_one">
+												<p>￥<span>35.0</span></p>
+											</td>
+											<td class="goods_counts">
+												<div>
+													<span class="goods_jian pointer">−</span>
+													<input type="text" value="1" />
+													<span class="goods_jia pointer">+</span>
+												</div>
+											</td>
+											<td class="price_some">
+												<p>￥<span>35.0</span></p>
+											</td>
+											<td class="delete_this">
+												<a class="goods_shanchu pointer" href="javascript:;">删除</a>
+											</td>
+										</tr>
+										<tr class="goods_jisuan">
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td>
+												<p>商品金额</p>
+												<p class="goods_price">¥<span>0.00</span></p>
+											</td>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+								
+								<div class="goods_shop sql_add">
+									<table class="table" id="goods_every">
+										<tr class="active goods_title">
+											<th class="goods_select">
+												<div>
+													<img class="pointer" src="img/xjx/cart/xjx_no.png"/>
+													<span>海澜之家旗舰店</span>
+												</div>
+											</th>
+											<th>规格</th>
+											<th>单价</th>
+											<th>数量</th>
+											<th>金额</th>
+											<th>操作</th>
+										</tr>
+										
+										<tr class="goods_jisuan">
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td>
+												<p>商品金额</p>
+												<p class="goods_price">¥<span>0.00</span></p>
+											</td>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+								
+								<div class="goods_zongjia">
+									<div class="goods_left">
+										<a class="goods_quan pointer">全选</a>
+										<a class="goods_delete pointer">批量删除</a>
+									</div>
+									<div class="goods_right">
+										<span class="goods_jiesuan">
+											商品总计：
+											<span>¥0.00</span>
+										</span>
+										<span class="goods_btn pointer">去结算</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer"></div>
+	</body>
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/math.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/xjx_cart.js" type="text/javascript" charset="utf-8"></script>
+</html>

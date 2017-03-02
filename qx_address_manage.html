@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/qx_myCount.css" />
+		<link rel="stylesheet" type="text/css" href="css/qx_myOrderer_intro.css" />
+		<link rel="stylesheet" type="text/css" href="css/qx_address_manage.css" />
+
+	</head>
+
+	<body>
+		<div id="header"></div>
+		<!--http://project.lanou3g.com/projects/zz/html/project/yihe/html/myCenterOrder.html-->
+		<!--左侧部分-->
+		<!--栅栏话-->
+		<div class="container">
+			<div class="row">
+				<div class="border col-sm-2 col-xs-2">
+					<div class="indivie_center">
+						<p class="indivie_center_icon1"><img src="img/qx_myCount_img/icon.png" />个人中心</p>
+						<ul class="indivie_center_content">
+							<li class="indivie_center_contentBig">交易管理 <img src="img/qx_myCount_img/arraw.png" /></li>
+							<li class="indivie_center_icon">
+								<a href="qx_myCount.html">我的账户</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_myOrder.html">我的订单</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_my_mark.html">我的积分</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="my_yiheTicket(cssIsMymark).html">我的易和券</a>
+							</li>
+							<li class="indivie_center_contentBig">会员资料 <img src="img/qx_myCount_img/arraw.png" /></li>
+							<li class="indivie_center_icon">
+								<a href="qx_private_information.html">个人资料</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_address_manage.html">地址管理</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_my_store.html">我的收藏</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_my_store.html">最近浏览</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_amend_password.html">修改密码</a>
+							</li>
+							<li class="indivie_center_contentBig">站内信 <img src="img/qx_myCount_img/arraw.png" /></li>
+							<li class="indivie_center_icon">
+								<a href="qx_my_message.html">我的消息</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="border col-sm-10 col-xs-10 border_orderer">
+					<!--❗️修改页面,先隐藏-->
+					<div class="myOrderer_intro ">
+						<div class="myOrderer_intro1">收货地址</div>
+						<div class="add_new_addrest">增加新地址</div>
+
+						<!--❗️暂无新地址时的隐藏状态-->
+						<div class="address_content">
+							<li class="address_content1">
+								<img src="img/qx_address_manage_img/pencil_with_paper.png" />
+								<span class="please_click">暂无新地址,请点击</span>
+								<span class="add_address">添加新地址</span>
+							</li>
+
+							<!--//收货地址的页面,先隐藏起来****************-->
+							<ul class="address_new" style="display: none;">
+								<li id="red_star1"><span id="red_star">*</span>收货人姓名:
+
+									<input type="text" class="input_address" id="address_name" value="" /></li>
+								<li class="area_class"><span id="red_star">*</span>所在地区:
+									<input type="text" name="" id="area1" value="选择省" class="area" />
+									<!--<ul class="area_ul"></ul>-->
+
+									<input type="text" name="" id="area2" value="选择市" class="area" />
+
+									<input type="text" name="" id="area3" value="选择县" class="area" />
+
+									<div class="ols">
+										<ol class="sheng">
+
+										</ol>
+										<ol class="shi">
+
+										</ol>
+										<ol class="xian">
+										</ol>
+									</div>
+								</li>
+
+								<li><span id="red_star">*</span>详细地址
+									<input type="text" class="input_address" id="address_details" value="" /></li>
+
+								<li><span id="red_star">*</span>联系电话
+									<input type="number" class="input_address" id="address_phone" value="" /><span class="fix_phone">或固定电话:</span><input type="number" class="input_address" id="phone_area" value="" /><span>-</span>
+									<input type="number" class="input_address" id="phone_area1" value="" />
+								</li>
+								<li id="radio_button">
+									<div class="circle"></div>
+									<form action="" method="get">
+										<label><input class="Default_address" type="radio" value="0" checked="checked"/><span class="Default_address1">设置为默认地址</span> </label>
+
+									</form>
+								</li>
+								<li class="private_submit">确认提交</li>
+
+							</ul>
+
+							<!--//确认提交的页面  需要传一些数值************-->
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="table" style="display: none;">
+								<tr class="one_raw2">
+
+									<th>序号</th>
+									<th>收货人</th>
+									<th>所在区域</th>
+									<th>街道地址</th>
+									<th>联系电话</th>
+									<th>备注</th>
+									<th>操作</th>
+
+								</tr>
+								<tr>
+									<th>1</th>
+									<th>刘德华</th>
+									<th>香港梧桐区第六金融街16栋</th>
+									<th>朝阳媒体村（北苑天畅园）C3-2506室</th>
+									<th>15866666666</th>
+									<th>不常用</th>
+									<th><span class="tolerant">设为默认|</span><span class="recompose">修改|</span><span class="dele_btn1">删除</span></th>
+
+								</tr>
+							</table>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</body>
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			$("#header").load("xjx_top.html");
+			$("#footer").load("jx_bottom.html");
+		});
+		$('.add_address').click(function() {
+			$('.address_content1').css('display', 'none')
+			$('.address_new').css('display', 'block')
+			$('.ols').css('display', 'none')
+
+		})
+
+		//单选框的点击事件
+		var flag = true;
+		$('#radio_button').click(function() {
+				flag = !flag
+				if(flag) {
+					$('.circle').css('border', '2px solid')
+					$('.Default_address').css('display', 'none')
+				} else {
+					$('.circle').css('border', '2px solid blue')
+					$('.Default_address').css('display', 'block')
+
+				}
+			})
+			//点击提交按钮,表格中多一条数据
+		var num = 1;
+		$('.private_submit').click(function() {
+			$('.address_new').css('display', 'none')
+			if($('#address_name').val() == "" || $('#area1').val() == "" || $('#address_details').val() == "" || $('#area2').val() == "" || $('#area3').val() == "" || $('#address_phone').val() == "") {
+				alert('您的信息不完全,请完善信息')
+				$('.address_new').css('display', 'block')
+
+			} else {
+				num++;
+
+				//创建tr和th
+				var form = $('<tr class="two_row">\
+		<th class="order_num">' + num + '</th>\
+		<th class="name_tr">' + $('#address_name').val() + '</th>\
+		<th class="big_address">' + $('#area1').val() + $('#area2').val() + $('#area3').val() + '</th>\
+		<th class="small_address">' + $('#address_details').val() + '</th>\
+		<th class="phone_address">' + $('#address_phone').val() + '</th>\
+		<th>不常用</th>\
+		<th><span class="tolerant">设为默认|</span><span class="recompose">修改|</span><span class="dele_btn">删除</span></th>\
+	</tr>\
+		')
+				$(form).appendTo($('.table'))
+					//用这种方法的话每一次下面的会把上面的所有的内容给覆盖掉❗️
+					//		$('.order_num').html(num);
+					//		$('.name_tr').html($('#address_name').val());
+					//		$('.big_address').html($('#area1').val()+$('#area2').val()+$('#area3').val());
+					//		$('.small_address').html($('#address_details').val());
+					//		$('.phone_address').html($('#address_phone').val());
+					//添加新地址的点击事件❗️
+				$('.table').css('display', 'block')
+				$('.add_new_addrest').click(function() {
+					$('.address_new').css('display', 'block')
+					$('.table').css('display', 'none')
+				})
+
+			}
+			$('.tolerant').click(function() {
+				$(this).parent().parent().appendTo($(".table:first"))
+
+			})
+
+			$('.dele_btn').click(function() {
+				$(this).parent().parent().remove()
+			})
+			$('.recompose').click(function() {
+				$('.table').css('display', 'none')
+				$('.address_new').css('display', 'block')
+				$('#address_name').val($('.name_tr').html());
+				$('#area1').val('杭州') + $('#area2').val('杭州') + $('#area3').val('萧山');
+				$('#address_details').val($('.small_address').html());
+				$('#address_phone').val($('.phone_address').html());
+
+			})
+
+		})
+	</script>
+
+	<script src="js/qx_address_manage.js" type="text/javascript" charset="utf-8"></script>
+	<script src="" type="text/javascript" charset="utf-8"></script>
+
+</html>

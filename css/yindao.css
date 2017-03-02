@@ -1,0 +1,242 @@
+.pointer {
+	cursor: pointer;
+}
+#footer {
+	min-width: 1200px;
+}
+.container {
+	min-width: 1200px;
+	height: 100%;
+}
+.xjx_area {
+	width: 100%;
+	min-width: 1200px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 12px;
+	color: #999;
+	background-color: #eee;
+}
+.xjx_arealeft {
+	float: left;
+}
+.xjx_arealeft img {
+	vertical-align: middle;
+	margin-left: 5px;
+}
+.xjx_arearight {
+	width: 174px;
+	float: right;
+	display: flex;
+	justify-content: space-between;
+}
+.xjx_arearight .xjx_line {
+	width: 1px;
+	height: 12px;
+	background-color: #999;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.xjx_yhlife {
+	width: 100%;
+	min-width: 1200px;
+	height: 130px;
+	border-bottom: 2px solid #008de1;
+	box-sizing: border-box;
+}
+.xjx_yihe {
+	width: 100%;
+	margin: 26px 0 24px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.xjx_yhimg {
+	width: 164px;
+	height: 80px;
+}
+.xjx_yhimg img {
+	width: 100%;
+	height: 100%;
+}
+.xjx_regist {
+	padding-top: 23px;
+	width: 300px;
+	height: 43px;
+	box-sizing: content-box;
+	display: flex;
+	justify-content: space-around;
+}
+.xjx_regist>span {
+	display: inline-block;
+	font-size: 18px;
+	line-height: 43px;
+	color: #999;
+}
+.xjx_regist>.pointer {
+	padding: 5px 40px;
+}
+.xjx_regist .xjx_line {
+	padding: 14px 0;
+	width: 2px;
+	height: 18px;
+	margin: auto;
+	background-color: #999;
+}
+
+.xjx_bg {
+	width: 100%;
+	min-width: 1200px;
+	height: 712px;
+	background: url(../img/xjx/yindao/guide_bg.png) no-repeat;
+	background-size: cover;
+}
+.xjx_pinzhi {
+	font-size: 48px;
+	color: white;
+	margin-top: 94px;
+	height: 176px;
+	line-height: 176px;
+	text-align: center;
+	font-family: Adobe 黑体 Std R,"Microsoft YaHei","微软雅黑";
+}
+.xjx_city {
+	margin: 38px auto 18px;
+	width: 724px;
+	display: flex;
+	justify-content: space-between;
+}
+.xjx_city input {
+	width: 390px;
+	height: 60px;
+	padding-left: 30px;
+	outline: none;
+	border: none;
+	font-size: 18px;
+}
+.xjx_city>.xjx_input {
+	width: 512px;
+	position: relative;
+}
+.xjx_moren {
+	width: 130px;
+	height: 60px;
+	font-size: 20px;
+	background-color: white;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.xjx_moren span {
+	display: inline-block;
+}
+.xjx_moren span:first-child {
+	display: inline-block;
+	height: 33px;
+	width: 1px;
+	background-color: #dcdcdc;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.xjx_moren span:last-child {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	white-space: nowrap;
+}
+.xjx_city .xjx_btn {
+	width: 170px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 24px;
+	border-radius: 5px;
+	background-color: #ec6a17;
+	color: white;
+	outline: none;
+}
+
+
+.xjx_position{
+	overflow: auto;
+	width: 724px;
+	height: 300px;
+	position: relative;
+	margin: 0 auto;
+	z-index: 99;
+	background-color: white;
+	border: 1px solid #d3d3d3;
+}
+.xjx_position:before,.xjx_contact:after{
+    content: "";  /*:before和:after必带技能，重要性为满5颗星*/
+	display: block;
+	position: absolute;  /*日常绝对定位*/
+    width: 0;
+    height: 0;
+    border:10px transparent solid;
+}
+.xjx_position:before{
+    top:-19px;
+    left: 440px;
+    border-bottom-color: white;
+    z-index: 1;
+}
+.xjx_position:after{
+	left: 440px;
+    top:-20px;
+    border-bottom-color: #d3d3d3;
+    z-index: 0;
+}
+.xjx_wrap {
+	width: 100%;
+}
+.xjx_remen {
+	padding: 20px;
+	border-bottom: 1px solid #d3d3d3;
+}
+.xjx_remen strong {
+	font-size: 18px;
+	font-weight: bold;
+	color: #999;
+}
+.xjx_remen span {
+	font-size: 14px;
+	color: #ec6a17;
+	padding: 6px 24px;
+	border: 1px solid;0
+}
+.xjx_allcity {
+	padding: 15px;
+	margin: 0;
+}
+.xjx_allcity li {
+	padding: 10px 0;
+	border-bottom: 1px solid #d3d3d3;
+	overflow: hidden;
+}
+.xjx_allcity span {
+	float: left;
+	width: 40px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 14px;
+	color: #898989;
+	background-color: #eee;
+	margin-right: 10px;
+}
+.xjx_some {
+	margin-left: 50px;
+}
+.xjx_some a {
+	float: left;
+	color: black;
+	padding: 5px 20px;
+	cursor: pointer;
+}
+.xjx_some a:hover {
+	text-decoration: none;
+}

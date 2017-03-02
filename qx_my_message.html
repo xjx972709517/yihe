@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/qx_myCount.css" />
+		<link rel="stylesheet" type="text/css" href="css/qx_myOrderer_intro.css" />
+		<link rel="stylesheet" type="text/css" href="css/qx_my_message.css" />
+
+	</head>
+
+	<body>
+		<div id="header"></div>
+		<!--http://project.lanou3g.com/projects/zz/html/project/yihe/html/myCenterOrder.html-->
+		<!--左侧部分-->
+		<!--栅栏话-->
+		<div class="container">
+			<div class="row">
+				<div class="border col-sm-2 col-xs-2">
+					<div class="indivie_center">
+						<p class="indivie_center_icon1"><img src="img/qx_myCount_img/icon.png" />个人中心</p>
+						<ul class="indivie_center_content">
+							<li class="indivie_center_contentBig">交易管理 <img src="img/qx_myCount_img/arraw.png" /></li>
+							<li class="indivie_center_icon">
+								<a href="qx_myCount.html">我的账户</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_myOrder.html">我的订单</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_my_mark.html">我的积分</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="my_yiheTicket(cssIsMymark).html">我的易和券</a>
+							</li>
+							<li class="indivie_center_contentBig">会员资料 <img src="img/qx_myCount_img/arraw.png" /></li>
+							<li class="indivie_center_icon">
+								<a href="qx_private_information.html">个人资料</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_address_manage.html">地址管理</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_my_store.html">我的收藏</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_my_store.html">最近浏览</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_amend_password.html">修改密码</a>
+							</li>
+							<li class="indivie_center_contentBig">站内信 <img src="img/qx_myCount_img/arraw.png" /></li>
+							<li class="indivie_center_icon">
+								<a href="qx_my_message.html">我的消息</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="border col-sm-10 col-xs-10 border_orderer">
+					<div class="myOrderer_intro ">
+						<div class="myOrderer_intro1">我的消息</div>
+
+						<div class="my_yiheTicket_statistics">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1" >
+								<tr class="one_raw">
+									<th>时间</th>
+									<th>充值订单号</th>
+									<th>充值金额</th>
+									<th>账户余额</th>
+								</tr>
+								<tr class="two_raw">
+									<td>您的货物已发货</td>
+									<td>2015年9月23日 15:25:07</td>
+									<td>未查看</td>
+									<td>
+										<a class="message_check">查看</a><span>|删除</span></td>
+								</tr>
+
+							</table>
+							<div class="my_message_letter" style="display: none;">
+								<li class="my_message_title">
+									<p class="my_message_title1">您的货物已发货</p>
+									<p class="my_message_time">2017年2月18日</p>
+
+								</li>
+								<li class="my_message_letter1">人品如君，人尽道，士林横绝。那更是、关西流庆，三山英杰。欣遇当年神降日，又逢初度阳生月。把八千馀岁祝君龄，为君说。君自有，封侯骨。君不是，栖鸾客。况如今东阁，正收人物。坦腹素知王逸少，求贤不必商岩说。便明朝、有诏自天来，君王礼。</li>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</body>
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("#header").load("xjx_top.html");
+			$("#footer").load("jx_bottom.html");
+		});
+		$('.message_check').click(function() {
+			$('.table1').css('display', 'none')
+			$('.my_message_letter').css('display', 'block')
+
+		})
+	</script>
+
+</html>

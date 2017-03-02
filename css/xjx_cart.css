@@ -1,0 +1,255 @@
+body {
+	cursor: default;
+}
+#footer,#header {
+	min-width: 1200px;
+}
+.pointer {
+	cursor: pointer;
+}
+.cart_con .container {
+	margin: 27px auto 40px;
+	border: 1px solid #d3d3d3;
+	min-width: 1200px;
+}
+.cart_wrap {
+	padding: 40px;
+}
+.cart_img {
+	height: 120px;
+	border-bottom: 1px solid #d3d3d3;
+	display: flex;
+	justify-content: space-between;
+}
+.cart_img img {
+	width: 140px;
+	height: 80px;
+}
+
+.cart_step {
+	width: 724px;
+	height: 44px;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+.cart_step span {
+	width: 210px;
+	line-height: 44px;
+	text-align: center;
+	font-size: 18px;
+	color: #333;
+	margin-left: 20px;
+	position: relative;
+	background-color: #e5e5e5;
+}
+.cart_step span:before,.cart_step span:after {
+    content: "";
+    display: inline-block;
+	position: absolute;
+    width: 0;
+    height: 0;
+}
+#cart_sure:before,#cart_order:before {
+	border: 22px solid #e5e5e5;
+    left: -22px;
+    border-left-color: transparent;
+}
+#cart_me:after,#cart_sure:after {
+	border: 22px solid transparent;
+	right: -44px;
+    border-left-color: #e5e5e5;
+}
+#cart_me.active,#cart_sure.active,#cart_order.active {
+	background-color: #ff6c00;
+}
+#cart_me.active:after {
+    border-left-color: #ff6c00;
+}
+#cart_sure.active:before {
+	border: 22px solid #ff6c00;
+    left: -22px;
+    border-left-color: transparent;
+}
+#cart_sure.active:after {
+	border: 22px solid transparent;
+	right: -44px;
+    border-left-color: #ff6c00;
+}
+#cart_order.active:before {
+	border: 22px solid #ff6c00;
+    left: -22px;
+    border-left-color: transparent;
+}
+
+.cart_header {
+	margin-top: 40px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #d3d3d3;
+}
+.cart_header img {
+	vertical-align: top;
+}
+.cart_header span {
+	font-size: 24px;
+	color: #666;
+	display: inline-block;
+	width: 106px;
+	text-align: center;
+}
+.cart_none {
+	height: 480px;
+	position: relative;
+	display: none;
+}
+.cart_kong {
+	width: 344px;
+	height: 110px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	justify-content: space-between;
+}
+.cart_btn {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.cart_btn span {
+	font-size: 18px;
+	color: #666;
+	text-align: center;
+}
+.cart_btn .cart_home {
+	height: 45px;
+	width: 170px;
+	line-height: 45px;
+	color: white;
+	background-color: #ec6a17;
+	border-radius: 5px;
+}
+
+.goods_shop {
+	border: 1px solid #d3d3d3;
+	margin-top: 20px;
+}
+
+#goods_every {
+	margin: 0;
+}
+#goods_every p {
+	margin: 0;
+}
+.goods_title {
+	height: 35px;
+	font-size: 14px;
+}
+.goods_goods {
+	height: 80px;
+	font-size: 12px;
+}
+.goods_title th,.goods_goods td {
+	text-align: center;
+	min-width: 100px;
+}
+#goods_every .goods_select {
+	text-align: left;
+	padding-left: 20px;
+}
+.goods_select>div>img {
+	margin-right: 20px;
+}
+.goods_select>div>img:not(.pointer) {
+	height: 60px;
+}
+#goods_every .goods_goods .goods_style {
+	color: #999;
+	line-height: 2.5em;
+}
+#goods_every .goods_goods td {
+	vertical-align: middle;
+}
+.goods_counts>div {
+	font-size: 0;
+}
+.goods_counts input {
+	width: 48px;
+	height: 26px;
+	border: 1px solid #d3d3d3;
+	outline: none;
+	font-size: 16px;
+	text-align: center;
+	color: #666;
+}
+.goods_counts span {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	border: 1px solid #d3d3d3;
+	line-height: 26px;
+	background-color: #f2f2f2;
+	color: #999;
+	vertical-align: top;
+	font-size: 30px;
+}
+.goods_counts .goods_jian {
+	border-right: 0;
+}
+.goods_counts .goods_jia {
+	border-left: 0;
+}
+.goods_jisuan {
+	height: 90px;
+}
+#goods_every .goods_jisuan td {
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+}
+.goods_price {
+	color: #ff6c00;
+}
+
+.goods_zongjia {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+.goods_left {
+	font-size: 14px;
+	font-weight: bold;
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+}
+.goods_left a {
+	display: inline-block;
+	margin: auto 0;
+	padding: 10px 30px;
+	box-sizing: content-box;
+}
+.goods_right {
+	width: 440px;
+	display: flex;
+	justify-content: space-between;
+}
+.goods_btn {
+	width: 170px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	border-radius: 5px;
+	background-color: #ec6a17;
+}
+.goods_jiesuan {
+	font-size: 16px;
+	margin: auto 0;
+}
+.goods_jiesuan>span {
+	color: #ec6a17;
+	font-size: 24px;
+}

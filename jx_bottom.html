@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jx_bottom.css"/>
+	</head>
+	<body>
+		<div class="jx_list">
+			<div class="container">
+				<div class="jx_wrap">
+					<span class="jx_baozhang pointer">
+						<img src="img/xjx/public/xjx_zhengpin.png"/>
+						<span>正品保障</span>
+					</span>
+					<span class="pointer">
+						<img src="img/xjx/public/xjx_zhuizong.png"/>
+						<span>全程追踪</span>
+					</span>
+					<span class="pointer">
+						<img src="img/xjx/public/xjx_kehu.png"/>
+						<span>客户监督</span>
+					</span>
+					<span class="pointer">
+						<img src="img/xjx/public/xjx_wuyou.png"/>
+						<span>售后无忧</span>
+					</span>
+					<span class="pointer">
+						<img src="img/xjx/public/xjx_clock.png"/>
+						<span>准时送达</span>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="jx_yhlife">
+			<div class="container">
+				<div class="jx_wrap">
+					<div class="jx_yihe">
+						<img class="pointer" src="img/xjx/public/xjx_yiheBig.png"/>
+					</div>
+					<div class="jx_erwei">
+						<span>
+							<img src="img/xjx/public/xjx_erweima.png"/>
+							<div class="jx_weixin">
+								<img src="img/xjx/public/xjx_wexin.png"/>
+								官方微信
+							</div>
+						</span>
+						<span>
+							<img src="img/xjx/public/xjx_erweima.png"/>
+							<div class="jx_app">
+								<img src="img/xjx/public/xjx_iphone.png"/>
+								APP下载
+							</div>
+						</span>
+					</div>
+					<div class="jx_info">
+						<div>
+							<h3 class="pointer">关于易和</h3>
+							<p class="jx_new pointer">新用户注册</p>
+							<p class="pointer">在线下单</p>
+							<p class="pointer">支付方式</p>
+						</div>
+						<div>
+							<h3 class="pointer">配送说明</h3>
+							<p class="pointer">运费说明</p>
+							<p class="pointer">配送方式</p>
+							<p class="pointer">发票说明</p>
+						</div>
+						<div>
+							<h3 class="pointer">售后服务</h3>
+							<p class="pointer">退换货规则</p>
+							<p class="pointer">服务保障承诺</p>
+							<p class="pointer">验货与签收</p>
+						</div>
+						<div>
+							<h3 class="pointer">加盟易和</h3>
+							<p class="pointer">加盟条款</p>
+							<p class="pointer">公司简介</p>
+							<p class="pointer">服务协议</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="jx_bottom">
+				<div>
+					<img src="img/xjx/public/xjx_bottom.png"/>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.jx_baozhang').click(function(){
+				sessionStorage.zhuPage = 0;
+				location.href = 'xjx_baozhang.html';
+			});
+			$('.jx_new').click(function(){
+				sessionStorage.zhuPage = 0;
+				location.href = 'qx_register.html';
+			});
+		});
+	</script>
+</html>

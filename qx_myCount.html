@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/qx_myCount.css" />
+		<link rel="stylesheet" type="text/css" href="css/qx_myOrderer_intro.css" />
+	</head>
+
+	<body>
+		<div id="header"></div>
+		<!--http://project.lanou3g.com/projects/zz/html/project/yihe/html/myCenterOrder.html-->
+		<!--左侧部分-->
+		<!--栅栏话-->
+		<div class="container">
+			<div class="row">
+				<div class="border col-sm-2 col-xs-2">
+					<div class="indivie_center">
+						<p class="indivie_center_icon1"><img src="img/qx_myCount_img/icon.png" />个人中心</p>
+						<ul class="indivie_center_content">
+							<li class="indivie_center_contentBig">交易管理 <img src="img/qx_myCount_img/arraw.png" /></li>
+							<li class="indivie_center_icon">
+								<a href="qx_myCount.html">我的账户</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_myOrder.html">我的订单</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_my_mark.html">我的积分</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="my_yiheTicket(cssIsMymark).html">我的易和券</a>
+							</li>
+							<li class="indivie_center_contentBig">会员资料 <img src="img/qx_myCount_img/arraw.png" /></li>
+							<li class="indivie_center_icon">
+								<a href="qx_private_information.html">个人资料</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_address_manage.html">地址管理</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_my_store.html">我的收藏</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_my_store.html">最近浏览</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_amend_password.html">修改密码</a>
+							</li>
+							<li class="indivie_center_contentBig">站内信 <img src="img/qx_myCount_img/arraw.png" /></li>
+							<li class="indivie_center_icon">
+								<a href="qx_my_message.html">我的消息</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+
+				<!--*************右边部分**************-->
+				<div class="border col-sm-10 col-xs-10 border_orderer">
+					<!--❗️***********我的账户*****************-->
+					<div class="intro_class">
+						<div class="myCount_intro">
+							<div class="border col-sm-4 myCount_intro_left">
+								<img src="img/timg.jpeg" />
+								<p class="myCount_nickname">您好,<span id="myCount_nickname1">周慧敏女士</span></p>
+							</div>
+							<div class="border col-sm-8 myCount_intro_right">
+								<span class="myCount_score">当前积分<p>240</p></span>
+								<span class="myCount_remainMoney">余额<p>¥1850.00</p></span>
+								<span class="myCount_ticket">易和券<p>0</p></span>
+
+							</div>
+						</div>
+						<div class="myCount_class">
+							<span class="myCount_myClass"><span class="myCount_myClass1">我的会员等级<img  class="myCount_myClasspic" src="img/qx_myCount_img/VIP2.png"/></span><span id="myCount_rechargMoney">去充值</span></span>
+							<p class="myCount_myRank">
+								<span>v1</span>
+								<span class="rank_line1"></span>
+								<span>v2</span>
+								<span class="rank_line2"></span>
+								<span>v3</span>
+								<span class="rank_line3"></span>
+								<span>v4</span>
+								<span class="rank_line4"></span>
+								<span>v5</span>
+								<span class="rank_line5"></span>
+								<span>v6</span>
+								<span class="rank_line6"></span>
+								<span>v7</span>
+							</p>
+							<p class="myCount_myRank_score">
+								<span>(0-500)</span>
+								<span>(501-2k)</span>
+								<span>(2k-5k)</span>
+								<span>(5k-2w)</span>
+								<span>(2w-5w)</span>
+								<span>(5w-10w)</span>
+								<span>(10w+)</span>
+							</p>
+
+						</div>
+
+					</div>
+
+					<!--*****************我的订单*******************-->
+					<div class="myOrderer_intro " style="display: none;">
+						<div class="myOrderer_intro1">我的订单</div>
+						<!--头部-->
+						<!--下半部分-->
+						<div class="myOrderer_content">
+							<div class="myOrderer_content_top">
+								<li><span>全部</span></li>
+								<li><span>待付款</span></li>
+								<li><span>待发货</span></li>
+								<li><span>待收货</span></li>
+								<li><span>已收货</span></li>
+								<li><span>退款</span></li>
+								<li><span>已完成</span></li>
+								<li><span>已关闭</span></li>
+								<p>订单回收站</p>
+							</div>
+
+							<div class="myOrderer_content_bottom">
+
+								<!--❗️订单为空时的状态   隐藏-->
+
+								<div class="no_Orderer " style="display: none;">
+									<img src="img/qx_myOrderer_img/files.png" />
+									<div class="no_Orderer1">
+										<span>暂时没有订单</span>
+										<span id="lookHome">去首页看看</span>
+									</div>
+								</div>
+
+								<div class="orderMessage">
+									<span>订单号:150319690000</span>
+									<span>下单日期:2017.02.17 18:18:18</span>
+									<span>海澜之家旗舰店</span>
+									<span>订单状态:<a>关闭</a></span>
+								</div>
+								<div class="ordererNum">
+									<!--表格和表单中的内容,一组假数据-->
+									<div class="orderContent1">
+
+										<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table" align="center">
+
+											<tr align=center>
+												<td><img src="img/qx_myOrderer_img/cloth.jpeg" / class="orderContent1_img"></td>
+												<td>&lt&lt寻龙诀&gt&gt北京保利龙旗广场</td>
+
+												<td>
+													<li>版本:貂皮大衣</li>
+													<li>颜色:酒红</li>
+												</td>
+
+												<td>¥13500.0X <span>1</span></td>
+												<td rowspan=3>
+													<li>总金额:¥27000.0</li>
+													<li>(含运费¥:50.0)</li>
+												</td>
+												<td rowspan=3>
+													<li>查看详情</li>
+													<li>删除订单</li>
+												</td>
+											</tr>
+											<tr align=center>
+												<td><img src="img/qx_myOrderer_img/cloth.jpeg" / class="orderContent1_img"></td>
+												<td>&lt&lt寻龙诀&gt&gt北京保利龙旗广场</td>
+
+												<td>
+													<li>版本:貂皮大衣</li>
+													<li>颜色:酒红</li>
+												</td>
+
+												<td>¥13500.0X <span>1</span></td>
+											</tr>
+											<tr align=center>
+												<td><img src="img/qx_myOrderer_img/cloth.jpeg" / class="orderContent1_img"></td>
+												<td>&lt&lt寻龙诀&gt&gt北京保利龙旗广场</td>
+
+												<td>
+													<li>版本:貂皮大衣</li>
+													<li>颜色:酒红</li>
+												</td>
+
+												<td>¥13500.0X <span>1</span></td>
+											</tr>
+
+										</table>
+										<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table" align="center">
+
+											<tr align=center>
+												<td><img src="img/qx_myOrderer_img/cloth.jpeg" / class="orderContent1_img"></td>
+												<td>&lt&lt寻龙诀&gt&gt北京保利龙旗广场</td>
+
+												<td>
+													<li>版本:貂皮大衣</li>
+													<li>颜色:酒红</li>
+												</td>
+
+												<td>¥13500.0X <span>1</span></td>
+												<td rowspan=3>
+													<li>总金额:¥27000.0</li>
+													<li>(含运费¥:50.0)</li>
+												</td>
+												<td rowspan=3>
+													<li>查看详情</li>
+													<li>删除订单</li>
+												</td>
+											</tr>
+											<tr align=center>
+												<td><img src="img/qx_myOrderer_img/cloth.jpeg" / class="orderContent1_img"></td>
+												<td>&lt&lt寻龙诀&gt&gt北京保利龙旗广场</td>
+
+												<td>
+													<li>版本:貂皮大衣</li>
+													<li>颜色:酒红</li>
+												</td>
+
+												<td>¥13500.0X <span>1</span></td>
+											</tr>
+											<tr align=center>
+												<td><img src="img/qx_myOrderer_img/cloth.jpeg" / class="orderContent1_img"></td>
+												<td>&lt&lt寻龙诀&gt&gt北京保利龙旗广场</td>
+
+												<td>
+													<li>版本:貂皮大衣</li>
+													<li>颜色:酒红</li>
+												</td>
+
+												<td>¥13500.0X <span>1</span></td>
+											</tr>
+
+										</table>
+										<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table" align="center">
+
+											<tr align=center>
+												<td><img src="img/qx_myOrderer_img/cloth.jpeg" / class="orderContent1_img"></td>
+												<td>&lt&lt寻龙诀&gt&gt北京保利龙旗广场</td>
+
+												<td>
+													<li>版本:貂皮大衣</li>
+													<li>颜色:酒红</li>
+												</td>
+
+												<td>¥13500.0X <span>1</span></td>
+												<td rowspan=3>
+													<li>总金额:¥27000.0</li>
+													<li>(含运费¥:50.0)</li>
+												</td>
+												<td rowspan=3>
+													<li>查看详情</li>
+													<li>删除订单</li>
+												</td>
+											</tr>
+											<tr align=center>
+												<td><img src="img/qx_myOrderer_img/cloth.jpeg" / class="orderContent1_img"></td>
+												<td>&lt&lt寻龙诀&gt&gt北京保利龙旗广场</td>
+
+												<td>
+													<li>版本:貂皮大衣</li>
+													<li>颜色:酒红</li>
+												</td>
+
+												<td>¥13500.0X <span>1</span></td>
+											</tr>
+											<tr align=center>
+												<td><img src="img/qx_myOrderer_img/cloth.jpeg" / class="orderContent1_img"></td>
+												<td>&lt&lt寻龙诀&gt&gt北京保利龙旗广场</td>
+
+												<td>
+													<li>版本:貂皮大衣</li>
+													<li>颜色:酒红</li>
+												</td>
+
+												<td>¥13500.0X <span>1</span></td>
+											</tr>
+
+										</table>
+
+									</div>
+
+								</div>
+								<!--**********底部的导航的实现*********-->
+
+							</div>
+							<nav aria-label="Page navigation" class="center-block">
+
+								<ul class="pagination pagination_center">
+									<li>
+										<a href="#">
+											<span>首页</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" aria-label="Previous">
+											<span>上一页</span>
+										</a>
+									</li>
+									<li class="active">
+										<a href="#">1</a>
+									</li>
+									<li>
+										<a href="#">2</a>
+									</li>
+									<li>
+										<a href="#">3</a>
+									</li>
+									<li>
+										<a href="#">4</a>
+									</li>
+									<li>
+										<a href="#">5</a>
+									</li>
+									<li>
+										<a href="#">6</a>
+									</li>
+									<li>
+										<a href="#">7</a>
+									</li>
+									<li>
+										<a href="#">8</a>
+									</li>
+									<li>
+										<a href="#">9</a>
+									</li>
+									<li>
+										<a href="#">10</a>
+									</li>
+									<li>
+										<a href="#" aria-label="Next">
+											<span aria-hidden="true">下一页</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span aria-hidden="true">尾页</span>
+										</a>
+									</li>
+								</ul>
+								<div class="navigation_statistics">共10页,到第
+									<p class="navigation_statistics_num"></p>页
+									<p class="navigation_sure">确定</p>共<span>10</span>条
+
+								</div>
+							</nav>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</body>
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("#header").load("xjx_top.html");
+			$("#footer").load("jx_bottom.html");
+			$('#myCount_nickname1').html(localStorage.phone_num1);
+			//更新数据和后台关联,显示易和券❗️❗️
+			$.ajax({
+				type: "get",
+				url: "myTicket.php",
+				async: true,
+				data: {
+					tab: 'select'
+				},
+				success: function(data) {
+					var d = JSON.parse(data);
+					$('.myCount_ticket>p').html(d[d.length - 1].moneyRemain);
+					//会员等级进行颜色变化❗️❗
+					var score = d[d.length - 1].moneyRemain;
+//					console.log((score-100)/400 * 100)
+					if(score<500){
+						$('.rank_line1').css('background','red');
+					}
+					if(2000 >= score&&score >= 500) {
+						//score-最小值/最大值-最小值的width变红.
+					$('.rank_line2').css('border-left', (score-500)/1500 * 100 + 'px solid red');
+
+					}
+					if(5000 >= score&&score > 2000){
+						$('.rank_line3').css('border-left', (score-2000)/3000 * 100 + 'px solid red');
+					}
+					if(20000 >= score&&score > 5000){
+						$('.rank_line4').css('border-left', (score-5000)/15000 * 100 + 'px solid red');
+					}
+					if(50000 >= score&&score > 20000){
+						$('.rank_line5').css('border-left', (score-20000)/30000 * 100 + 'px solid red');
+					}
+					if(100000 >= score&&score > 50000){
+						$('.rank_line6').css('border-left', (score-50000)/50000 * 100 + 'px solid red');
+					}
+					if(score > 100000){
+						$('.rank_line7').csscss('background','red');
+					}
+				}
+
+			});
+			
+				$('#myCount_rechargMoney').click(function(){
+				//css样式层级要提高❗
+			location.href='my_yiheTicket(cssIsMymark).html';
+			})
+
+		});
+	</script>
+
+</html>

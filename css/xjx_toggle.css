@@ -1,0 +1,119 @@
+.pointer {
+	cursor: pointer;
+}
+#footer,#header {
+	min-width: 1200px;
+}
+.xjx_location .container {
+	min-width: 1200px;
+}
+.xjx_location {
+	width: 100%;
+	min-width: 1200px;
+	background-color: #eee;
+}
+.xjx_position {
+	height: 55px;
+	line-height: 55px;
+	color: #666;
+	font-size: 14px;
+}
+.xjx_position img {
+	vertical-align: top;
+	margin: 22px 5px;
+}
+.xjx_position .active {
+	color: #ec6a17;
+}
+.location_change {
+	width: 100%;
+	font-size: 16px;
+	background-color: white;
+}
+.location_select {
+	padding: 0 20px;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #e3e3e3;
+}
+.location_select .active {
+	color: #ec6a17;
+}
+.location_select>span {
+	margin-right: 30px;
+}
+.location_select>span:first-child {
+	margin-right: 10px;
+}
+.location_xuanze {
+	height: 80px;
+}
+.xuanze_way{
+	margin-top: 15px;
+	margin-left: 20px;
+	display: block;
+	width: 143px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	color: white;
+	background-color: #008de1;
+	border-radius: 5px;
+	position: relative;
+}
+.xuanze_way:after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 30px;
+	bottom: -20px;
+	border:10px transparent solid;
+	border-top-color: #008de1;
+}
+.location_allCity {
+	padding: 0 20px 20px;
+}
+.location_allCity>div {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.location_allCity>div:hover {
+	background-color: #f0f0f0;
+}
+.location_allCity>div:hover .location_zimu {
+	color: white;
+	background-color: #008de1;
+}
+/*.location_allCity .active .location_zimu {
+	color: white;
+	background-color: #008de1;
+}
+.location_allCity .active {
+	background-color: #f0f0f0;
+}*/
+.location_zimu {
+	float: left;
+	width: 55px;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	font-size: 24px;
+	border: 1px solid #d3d3d3;
+}
+.location_city {
+	margin-left: 55px;
+	min-height: 46px;
+	overflow: hidden;
+}
+.location_city a {
+	float: left;
+	color: black;
+	line-height: 1.8em;
+	padding: 5px 20px;
+	cursor: pointer;
+}
+.location_city a:hover {
+	text-decoration: none;
+}

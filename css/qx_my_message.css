@@ -1,0 +1,116 @@
+color="#efefef"
+html{font-family:"微软雅黑",Arial,sans-serif}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,button,textarea,p,th,td{padding:0;margin:0;font-family:Arial,sans-serif,Microsoft YaHei}
+fieldset,img{border:0}
+a{text-decoration:none;color:#000;outline:none}
+li{list-style:none}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+input,button,textarea,select{*font-size:100%}
+table { border-collapse: collapse; border-spacing: 0; }
+.container{
+	min-width: 1200px;
+	/*background: #f2f2f2;*/
+}
+.my_mark{
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.my_mark1{
+	width: 40%;
+	height: 60px;
+	display: flex;
+	justify-content:space-between;
+	text-align: center;
+	margin-left: 8px;
+}
+.my_mark1 li{
+	font-size: 22px;
+	text-align: center;
+	line-height: 60px;
+}
+.my_mark1 li:nth-child(even){
+	color: red;
+	
+}
+.my_mark p{
+	font-size: 22px;
+	margin-right:8px;
+	text-align: center;
+	line-height: 60px;
+    color: cornflowerblue;
+	
+}
+.table1 tr td{ 
+text-align: left;
+/*line-height: 200px;*/
+margin-left: 20px;
+}  
+.one_raw{
+	border-top: 1px solid lightgray;
+	background: lightgray;
+	text-align: right;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
+
+
+#ticket_count{
+	height: 38px;
+	width: 172px;
+}
+.enter_money{
+	width: 150px;
+	height: 46px;
+	border-radius: 8px;
+	background: orangered;
+	color:white;
+	text-align: center;
+	line-height: 46px;
+	font-size: 24px;
+	margin-left: 112px;
+	margin-top: 20px;
+}	
+.money_record{
+	font-size: 16px;
+	color: cornflowerblue;
+	margin-top:80px; 
+	
+}
+.message_check{
+	color: red;
+}
+.my_message_letter{
+	border-top: 1px solid lightgray;
+	font-size: 16px;
+}
+.my_message_letter{
+	width: 100%;
+	
+}
+.my_message_title{
+	margin-top: 20px;
+	width: 60%;
+	height: 30px;
+	margin-left:40%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.my_message_title1{
+	font-size: 20px;
+	line-height: 30px;
+	color: deepskyblue;
+}
+.my_message_time{
+	font-size: 16px;
+	line-height: 30px;
+}
+.my_message_letter1{
+	text-indent: 32px;
+	margin-top: 60px;
+}

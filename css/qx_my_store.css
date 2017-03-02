@@ -1,0 +1,76 @@
+/*color="#efefef"*/
+html{font-family:"微软雅黑",Arial,sans-serif}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,button,textarea,p,th,td{padding:0;margin:0;font-family:Arial,sans-serif,Microsoft YaHei}
+fieldset,img{border:0}
+a{text-decoration:none;color:#000;outline:none}
+li{list-style:none}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+input,button,textarea,select{*font-size:100%}
+table { border-collapse: collapse; border-spacing: 0; }
+.container{
+	min-width: 1200px;
+	/*background: #f2f2f2;*/
+}
+.myOrderer_intro{
+	text-align: center;
+}
+.goods_pic_intro{
+	width: 100%;
+	border-top: 1px solid lightgray;
+}
+.small_pic_intro{
+	width: 200px;
+	height: 320px;
+	margin: 22px 10px;
+	margin-top:20px;
+	border: 1px solid lightgray;
+	float: left;
+	
+}
+
+.small_pic_intro img{
+	width: 160px;
+	margin:20px;
+    
+}
+.goods_intro{
+	font-size: 14px;
+	margin: 15px;
+	height: 42px;
+}
+.money_discount{
+	width: 190px;
+	height: 42px;
+	display: flex;
+	margin: 4px;
+	justify-content: space-between;
+}
+.money_now{
+	
+	font-size: 16px;
+	color: red;
+	display: block;
+	text-align: center;
+	line-height: 42px;
+	
+}
+.money_ago{
+		font-size: 12px;
+	color: dimgray;
+	text-decoration: line-through;
+	display: block;
+	text-align: center;
+	line-height: 42px;
+}
+.store_goods{
+	width: 72px;
+	height: 24px;
+	margin-top: 9px
+	;
+	border:1px solid red ;
+	border-radius:10px;
+	text-align: center;
+	line-height: 24px;
+	font-size: 16px;
+}

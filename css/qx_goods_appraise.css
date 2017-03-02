@@ -1,0 +1,98 @@
+/*color="#efefef"*/
+/*html{font-family:"微软雅黑",Arial,sans-serif}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,button,textarea,p,th,td{padding:0;margin:0;font-family:Arial,sans-serif,Microsoft YaHei}
+fieldset,img{border:0}
+a{text-decoration:none;color:#000;outline:none}
+li{list-style:none}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+input,button,textarea,select{*font-size:100%}
+table { border-collapse: collapse; border-spacing: 0; }*/
+
+.container{
+	width: 1200px;
+	/*background: #f2f2f2;*/
+}
+.myOrderer_intro{
+	border: 1px solid;
+/*height: 400px;*/
+}
+.goods_pic{
+	text-align: center;
+	width: 170px;
+	height: 400px;
+}
+.goods_pic img{
+	width: 170px;
+	height: 170px;
+	margin-top: 15px;
+}
+.goods_pic p{
+	text-align: center;
+	margin-top: 30px;
+	font-size: 16px                                                                                                                                                                                                                                                        
+}
+.goods_score{
+	margin-left: 30px;
+ overflow: hidden;
+	position: relative;
+	
+}
+.goods_score li{
+	font-size: 16px;
+	height: 30px;
+	margin-top: 20px;
+}
+#text_content{
+	resize: none;
+	width: 700px;
+}
+.count_remain{
+	position: absolute;
+	top: 280px;
+	right: 80px;
+	color: lightgrey
+}
+.upload{
+	width: 60px;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	
+	
+}
+.goods_score p{
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px;
+	background: url(../img/qx_my_store_img/add_code.png) no-repeat center center;
+	background-color: lightgray;
+}
+.upload_file{
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+
+}
+.opinion{
+	width: 150px;
+	height: 40px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 40px;
+	background: darkorange;
+	margin-top: 50px;
+	margin-left: 100px;
+}
+.hide_pics {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/qx_my_store_img/gray_star.png) no-repeat;
+}
+.hide_pics.show_pic{
+	/*width: 60px;
+	height: 60px;*/
+background: url(../img/qx_my_store_img/red_star.png) no-repeat;
+}

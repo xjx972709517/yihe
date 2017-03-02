@@ -1,0 +1,24 @@
+/*宽度浏览器宽度100%*/
+html,body,.header,.header_bottom,.header_top,.body,.body_banner,.footer,.footer_top,.footer_mid,.suggest_wrap,.new_address_wrap,.alert,.black_wrap{width:100%;min-width:1180px}
+/*宽度1180px*/
+.header_bottom_nav,.header_middle,.header_top_nav,.city,.footer_top>ul,.footer_min,.footer_bottom,.page3,.page4,.suggest,.new_address,.current_location,.brand_apply,.user_register,.page2_min,.no_result,.industry_header,.industry_body,.industry_body_header,.search_result_wrap,.seller_wrap,.goods_wrap,.body_about,.body_quality{width:1180px;margin:0 auto}
+/*------------其他零碎-------------*/
+.body{padding-bottom: 20px}
+.body h1{color:#FFF;text-align:center;}
+/*设定inline-block*/
+.inline_block{display:inline-block}
+/*行元素对齐方法*/
+.v_t{vertical-align:top}
+.v_m{vertical-align:middle}
+.v_b{vertical-align:bottom}
+/*横向浮动ul*/
+.ul_in_row>li{float:left}
+/*当前所在位置*/
+.current_location{height:54px;line-height:54px;font-size:16px;}
+.current_location a:nth-last-of-type(1){color:#F46B2B}
+/*无搜索结果*/
+.no_result_wrap{height:380px;padding-top:240px;display:none}
+.no_result{width:330px;height:120px;font-size:0px;text-align:center}
+.no_result img{width:120px;height:120px}
+.no_result p{width:170px;line-height:60px;font-size:18px}
+.no_result a{width:170px;height:45px;line-height:45px;border-radius:5px;margin-top:-45px;color:#FFF;background-color:#FF6D00;font-size:18px}

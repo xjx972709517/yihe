@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/xjx_confirm.css"/>
+	</head>
+	<body>
+		<div id="header"></div>
+		
+		<div class="cart_con">
+			<div class="container">
+				<div class="cart_wrap">
+					<div class="cart_img">
+						<img src="img/xjx/cart/xjx_yiheimg.png"/>
+						<span class="cart_step">
+							<span id="cart_me">我的购物车</span>
+							<span id="cart_sure" class="active">确认订单信息</span>
+							<span id="cart_order">订单提交成功</span>
+						</span>
+					</div>
+					
+					<div class="cart_newAddress cart_tianxie">
+						<div class="cart_header">
+							<span>收货人信息</span>
+						</div>
+						<div class="cart_newdizhi">
+							<div>
+								<span class="cart_areaInfo"><span>✽</span>收货人姓名：</span>
+								<input class="shouhuoName" type="text" />
+							</div>
+							<div>
+								<span class="cart_areaInfo"><span>✽</span>所在地区：</span>
+								<form class="cart_liandong" action="" name="form1">
+									<div class="item" id="Province">
+										<i>请选择省份</i>
+										<div>
+											<ul>
+												<li>请选择省份</li>
+											</ul>
+										</div>
+										<input type="hidden" name="cho_Province" value="请选择省份" />
+									</div>
+									<div class="item" id="City">
+										<i>请选择城市</i>
+										<div>
+											<ul>
+												<li>请选择城市</li>
+											</ul>
+										</div>
+										<input type="hidden" name="cho_City" value="请选择城市" />
+									</div>
+									<div class="item" id="Area">
+										<i>请选择地区</i>
+										<div>
+											<ul>
+												<li>请选择地区</li>
+											</ul>
+										</div>
+										<input type="hidden" name="cho_Area" value="请选择地区" />
+									</div>
+								</form>
+							</div>
+							<div>
+								<span class="cart_areaInfo"><span>✽</span>详细地址：</span>
+								<input class="detailArea" type="text" />
+							</div>
+							<div>
+								<span class="cart_areaInfo"><span>✽</span>联系电话：</span>
+								<input class="lianxiPhone" type="text" />
+								<span>或固定电话：</span>
+								<input class="quhao" type="text" />
+								<span>−</span>
+								<input class="gudingPhone" type="text" />
+							</div>
+							<div>
+								<span class="cart_quren pointer">确认并设为默认地址</span>
+							</div>
+						</div>
+						<div class="order_address">
+							<span class="glyphicon glyphicon-map-marker"></span>
+							<span class="newAddress">
+								<span>送货至:</span>
+								<span class="newName">单小兵</span>
+								<span class="newArea">北京</span>
+								<span class="newCity">北京市</span>
+								<span class="newProper">昌平区</span>
+								<span class="newDetail">天通苑明天第一城4号楼101</span>
+								<span class="newPhone">手机15032203562</span>
+								<span class="newTelephone">固定电话010−2154159</span>
+							</span>
+						</div>
+					</div>
+					
+					<div class="cart_cart">
+						<div class="cart_header">
+							<span>商品信息</span>
+						</div>
+						<div class="cart_goods">
+							<div class="cart_none">
+								<div class="cart_kong">
+									<img src="img/xjx/cart/xjx_cartB.png"/>
+									<span class="cart_btn">
+										<span>您的购物车是空的</span>
+										<span class="cart_home pointer">去首页看看</span>
+									</span>
+								</div>
+							</div>
+							<div class="goods_cart">
+								<div class="goods_shop shuju_die">
+									<table class="table" id="goods_every">
+										<tr class="active goods_title">
+											<th class="goods_select">
+												<div>
+													<span>海澜之家旗舰店</span>
+												</div>
+											</th>
+											<th>规格</th>
+											<th>单价</th>
+											<th>数量</th>
+											<th>金额</th>
+										</tr>
+										<tr class="goods_goods">
+											<td class="goods_select">
+												<div>
+													<img src="img/xjx/cart/xjx_goods.png"/>
+													<span>《寻龙诀》北京保利龙旗广场</span>
+												</div>
+											</td>
+											<td class="goods_style">
+												<p>版本：国行 32G</p>
+												<p>颜色：星钻黑</p>
+											</td>
+											<td>
+												<p>￥<span>35.0</span></p>
+											</td>
+											<td class="goods_counts">
+												<div>1</div>
+											</td>
+											<td>
+												<p>￥<span>35.0</span></p>
+											</td>
+										</tr>
+										<tr class="goods_goods">
+											<td class="goods_select">
+												<div>
+													<img src="img/xjx/cart/xjx_goods.png"/>
+													<span>《寻龙诀》北京保利龙旗广场</span>
+												</div>
+											</td>
+											<td class="goods_style">
+												<p>版本：国行 32G</p>
+												<p>颜色：星钻黑</p>
+											</td>
+											<td>
+												<p>￥<span>35.0</span></p>
+											</td>
+											<td class="goods_counts">
+												<div>3</div>
+											</td>
+											<td>
+												<p>￥<span>35.0</span></p>
+											</td>
+										</tr>
+										<tr class="goods_jisuan">
+											<td></td>
+											<td>
+												<span class="goods_ziqu pointer">到店消费</span>
+												<span class="goods_peisong pointer">商家配送</span>
+											</td>
+											<td>
+												<p>运费</p>
+												<p class="goods_yunfei">¥<span>108.0</span></p>
+											</td>
+											<td>
+												<p>店铺金额</p>
+												<p class="goods_jine">¥<span>108.0</span></p>
+											</td>
+											<td>
+												<p>店铺合计</p>
+												<p class="goods_heji">¥<span>108.0</span></p>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="goods_fapiao shuju_die">
+									<div class="cart_header">
+										<span>开票信息</span>
+									</div>
+									<div class="cart_info">
+										<div class="cart_who">
+											<div class="radio">
+												<label>
+													<input type="radio" name="shop1" value="不需要" checked>
+													不需要
+												</label>
+											</div>
+											<div class="radio">
+												<label>
+													<input type="radio" name="shop1" value="个人">
+													个人
+												</label>
+											</div>
+											<div class="radio">
+												<label>
+													<input type="radio" name="shop1" value="单位">
+													单位
+												</label>
+											</div>
+										</div>
+										<div class="cart_taitou">
+											<span>发票抬头:</span>
+											<input type="text" />
+											<span class="cart_tishi"><span>✽</span>请填写后认真核对发票信息</span>
+										</div>
+									</div>
+									<div class="cart_header">
+										<span>添加订单备注</span>
+									</div>
+									<div class="cart_info">
+										<input class="cart_beizhu" type="text" placeholder="限45个字，请填写有关商品、支付、发票等信息"/>
+									</div>
+								</div>
+								<div class="goods_shop sql_add">
+									<table class="table" id="goods_every">
+										<tr class="active goods_title">
+											<th class="goods_select">
+												<div>
+													<span>海澜之家旗舰店</span>
+												</div>
+											</th>
+											<th>规格</th>
+											<th>单价</th>
+											<th>数量</th>
+											<th>金额</th>
+										</tr>
+										
+										
+										<tr class="goods_jisuan">
+											<td></td>
+											<td>
+												<span class="goods_ziqu pointer">到店消费</span>
+												<span class="goods_peisong pointer">商家配送</span>
+											</td>
+											<td>
+												<p>运费</p>
+												<p class="goods_yunfei">¥<span>10.00</span></p>
+											</td>
+											<td>
+												<p>店铺金额</p>
+												<p class="goods_jine">¥<span>108.0</span></p>
+											</td>
+											<td>
+												<p>店铺合计</p>
+												<p class="goods_heji">¥<span>108.0</span></p>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="goods_fapiao sql_add">
+									<div class="cart_header">
+										<span>开票信息</span>
+									</div>
+									<div class="cart_info">
+										<div class="cart_who">
+											<div class="radio">
+												<label>
+													<input type="radio" name="shop2" value="不需要" checked>
+													不需要
+												</label>
+											</div>
+											<div class="radio">
+												<label>
+													<input type="radio" name="shop2" value="个人">
+													个人
+												</label>
+											</div>
+											<div class="radio">
+												<label>
+													<input type="radio" name="shop2" value="单位">
+													单位
+												</label>
+											</div>
+										</div>
+										<div class="cart_taitou">
+											<span>发票抬头:</span>
+											<input type="text" />
+											<span class="cart_tishi"><span>✽</span>请填写后认真核对发票信息</span>
+										</div>
+									</div>
+									<div class="cart_header">
+										<span>添加订单备注</span>
+									</div>
+									<div class="cart_info">
+										<input class="cart_beizhu" type="text" placeholder="限45个字，请填写有关商品、支付、发票等信息"/>
+									</div>
+								</div>
+								<div class="cart_zongji">
+									<div>
+										总计：<span class="zongji">¥<span>115.0</span></span>
+									</div>
+									<div>
+										<span>使用积分抵扣(您有<span class="yongyou">1254</span>积分)</span>
+										<input class="jifen" type="text" value="1000"/>
+										<span class="dijia">− ¥<span>0.00</span></span>
+									</div>
+								</div>
+								<div class="cart_yingfu">
+									<div>
+										应付金额：<span class="yingfu">¥<span>115.0</span></span>
+									</div>
+									<div>
+										订单完成后可获得积分：
+										<span class="getJifen">11.5</span>
+									</div>
+								</div>
+								<div class="cart_tijiao">
+									<span class="tijiao pointer">提交订单</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer"></div>
+	</body>
+	<script src="js/jQuery v2.1.4.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jQuery Migrate min v1.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/city.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.cityselect.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/math.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/xjx_confirm.js" type="text/javascript" charset="utf-8"></script>
+</html>

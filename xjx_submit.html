@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/xjx_submit.css"/>
+	</head>
+	<body>
+		<div id="header"></div>
+		
+		<div class="cart_con">
+			<div class="container">
+				<div class="cart_wrap">
+					<div class="cart_img">
+						<img src="img/xjx/cart/xjx_yiheimg.png"/>
+						<span class="cart_step">
+							<span id="cart_me">我的购物车</span>
+							<span id="cart_sure">确认订单信息</span>
+							<span id="cart_order" class="active">订单提交成功</span>
+						</span>
+					</div>
+					<div class="cart_tijiao">
+						<div class="order_submit">
+							<img src="img/xjx/cart/xjx_yes.png" />
+							<p>订单已提交，请于24小时内完成支付<span>（逾期订单将被取消）</span></p>
+						</div>
+						<div class="order_address">
+							<span class="glyphicon glyphicon-map-marker"></span>
+							<span class="myAddress">
+								<span>送货至:</span>
+								<span class="name">单小兵</span>
+								<span class="area">北京</span>
+								<span class="city">北京市</span>
+								<span class="proper">昌平区</span>
+								<span class="detail">天通苑明天第一城4号楼101</span>
+								<span class="phone">手机15032203562</span>
+								<span class="telephone">固定电话010−2154159</span>
+							</span>
+						</div>
+					</div>
+					<div class="cart_zhifu">
+						<div class="order_jine">
+							<span>应付金额：<span class="order_pay">165.90</span>（在线支付）</span>
+							<span class="order_num">订单编号：<span>425954156947</span></span>
+						</div>
+						<div class="order_text">支付平台</div>
+						<div class="order_method">
+							<div class="radio">
+								<label>
+									<input type="radio" name="pay" value="支付宝">
+									<img src="img/xjx/cart/xjx_zhifubaoIcon.png"/>
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="pay" value="微信">
+									<img src="img/xjx/cart/xjx_weixinIcon.png"/>
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="pay" value="银联">
+									<img src="img/xjx/cart/xjx_yinlianIcon.png"/>
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="pay" value="余额">
+									<img src="img/xjx/cart/xjx_yueIcon.png"/>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="order_way1">
+						<div class="order_diannao">
+							<div>使用电脑支付</div>
+							<div>
+								<img src="img/xjx/cart/xjx_diannaoPay.png"/>
+							</div>
+							<div>
+								<span class="order_payBtn pointer">立即支付</span>
+							</div>
+						</div>
+						<div class="order_zhifubao">
+							<p>使用支付宝钱包扫一扫付款</p>
+							<img src="img/xjx/cart/xjx_zhifubaoPay.png"/>
+						</div>
+						<span class="order_huo">或</span>
+					</div>
+					<div class="order_way2">
+						<div class="order_shouji">
+							<img src="img/xjx/cart/xjx_shoujiPay.png"/>
+						</div>
+						<div class="order_weixin">
+							<p>使用微信扫一扫付款</p>
+							<img src="img/xjx/cart/xjx_zhifubaoPay.png"/>
+						</div>
+						<div class="order_line"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="order_pop">
+			<div class="order_pingtai">
+				<div class="order_title">使用平台支付</div>
+				<div class="order_info">请您在新打开的网上银行页面进行支付，支付完成前请不要关闭该窗口</div>
+				<div class="order_btn">
+					<span class="order_yesBtn pointer">
+						<p>已经完成支付</p>
+						<p>查看订单详情</p>
+					</span>
+					<span class="order_noBtn pointer">
+						<p>支付失败</p>
+						<p>更换支付方式</p>
+					</span>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer"></div>
+	</body>
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/xjx_submit.js" type="text/javascript" charset="utf-8"></script>
+</html>

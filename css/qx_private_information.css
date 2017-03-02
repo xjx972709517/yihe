@@ -1,0 +1,220 @@
+/*color="#efefef"*/
+html{font-family:"微软雅黑",Arial,sans-serif}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,button,textarea,p,th,td{padding:0;margin:0;font-family:Arial,sans-serif,Microsoft YaHei}
+fieldset,img{border:0}
+a{text-decoration:none;color:#000;outline:none}
+li{list-style:none}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+input,button,textarea,select{*font-size:100%}
+table { border-collapse: collapse; border-spacing: 0; }
+.container{
+	min-width: 1200px;
+	/*background: #f2f2f2;*/
+}
+.amend_information{
+	height: 438px;
+}
+.amend_information li{
+	font-size: 16px;
+	margin-left: 60px;
+	margin-top: 36px;
+	position: relative;
+	
+}
+.portrait{
+	width: 300px;
+	height: 72px;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	line-height: 72px;
+}
+.portrait img{
+	height: 72px;
+}
+.change{
+	color: dodgerblue;
+}
+.private_phone{
+	background: lightgray;
+	margin: 0 30px;
+}
+#man{
+	margin-left: 30px;
+}
+.private_born_time{
+	margin-left: 30px;
+}
+.private_submit{
+position: absolute;
+width: 170px;
+height: 46px;
+border-radius: 8px;
+color: white;
+text-align: center;
+line-height: 46px;
+background: orangered;	
+left: 72px;
+}
+.private_submit_correct{
+width: 170px;
+height: 46px;
+border-radius: 8px;
+color: white;
+text-align: center;
+line-height: 46px;
+background: orangered;
+}
+#myOrderer_intro1{
+	line-height: 58px;
+	height: 58px;
+	color: dodgerblue;
+	margin-left: 6px;
+	font-size: 16px;
+
+}
+/*.progress_check{
+	width: 666px;
+	height: 44px;
+	background-color: #e6e6e6;
+	display: flex;
+	justify-content: space-between;
+}*/
+.progress_check1{
+	width: 200px;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+	float: left;
+	
+}
+.progress_check2{
+	width: 200px;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+	float: left;
+	
+}
+.progress_check3{
+	width: 200px;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+	float: left;
+	
+}
+.progress_check1_arraw1{
+	display: inline-block;
+	width: 32px;
+	height: 44px;
+	background-color: lightgray;
+	text-align: center;
+	line-height: 44px;
+	background: url(../img/arraw_gray1.png)no-repeat;
+	float: left;
+		
+}
+.progress_check1_arraw2{
+	display: inline-block;
+	width: 32px;
+	height: 44px;
+	background-color: lightgray;
+	text-align: center;
+	line-height: 44px;
+	background: url(../img/arraw_gray1.png)no-repeat;
+	float: left;
+		
+}
+/*.auth_code{
+	width: 310px;
+}*/
+#code{
+	height: 38px;
+}
+#progress_checkPhone{
+	width: 310px;
+	height: 44px;
+		
+}
+#progress_checkPhone1{
+	display: block;
+	width: 310px;
+	height: 44px;
+		
+}
+#auth_code1{
+	width: 114px;
+	height: 44px;
+}
+#change1{
+	/*width: 350px;*/
+	height: 44px;
+	font-size: 10px;
+	color: red;
+	text-align: center;
+	line-height: 44px;
+}
+
+.phone_auth_code{ position:relative; width: 388px;height: 44px;}
+#phone_auth_code1 {width: 308px; line-height: 44px; height: 44px; padding: 0 10px;}
+.searchButton { position:absolute; right:82px; background: deepskyblue; width: 80px; height: 40px;  text-align: center; border:none;color: white;top:9px; line-height: 40px;}
+.cart_step {
+	width: 724px;
+	height: 44px;
+	margin-top: 40px;
+	margin-left: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+.cart_step span {
+	width: 210px;
+	line-height: 44px;
+	text-align: center;
+	font-size: 18px;
+	color: #333;
+	margin-left: 20px;
+	position: relative;
+	background-color: #e5e5e5;
+	cursor: default;
+}
+.cart_step span:before,.cart_step span:after {
+    content: "";
+    /*只有设置了content: "",才能设置下面的border,这是个前提❗️❗️*/
+    display: inline-block;
+	position: absolute;
+    width: 0;
+    height: 0;
+}
+#cart_sure:before,#cart_order:before {
+	border: 22px solid #e5e5e5;
+    left: -22px;
+    border-left-color: transparent;
+}
+#cart_me:after,#cart_sure:after {
+	border: 22px solid transparent;
+	right: -44px;
+    border-left-color: #e5e5e5;
+}
+#cart_me.active,#cart_sure.active,#cart_order.active {
+	background-color: #ff6c00;
+}
+#cart_me.active:after {
+    border-left-color: #ff6c00;
+}
+#cart_sure.active:before {
+	border: 22px solid #ff6c00;
+    left: -22px;
+    border-left-color: transparent;
+}
+#cart_sure.active:after {
+	border: 22px solid transparent;
+	right: -44px;
+    border-left-color: #ff6c00;
+}
+#cart_order.active:before {
+	border: 22px solid #ff6c00;
+    left: -22px;
+    border-left-color: transparent;
+}

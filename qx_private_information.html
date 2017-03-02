@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/qx_myCount.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/qx_myOrderer_intro.css" '/'>-->
+		<link rel="stylesheet" type="text/css" href="css/qx_private_information.css" />
+
+	</head>
+
+	<body>
+		<div id="header"></div>
+		<!--http://project.lanou3g.com/projects/zz/html/project/yihe/html/myCenterOrder.html-->
+		<!--左侧部分-->
+		<!--栅栏话-->
+		<div class="container">
+			<div class="row">
+				<div class="border col-sm-2 col-xs-2">
+					<div class="indivie_center">
+						<p class="indivie_center_icon1"><img src="img/qx_myCount_img/icon.png" />个人中心</p>
+						<ul class="indivie_center_content">
+							<li class="indivie_center_contentBig">交易管理 <img src="img/qx_myCount_img/arraw.png" /></li>
+							<li class="indivie_center_icon">
+								<a href="qx_myCount.html">我的账户</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_myOrder.html">我的订单</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_my_mark.html">我的积分</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="my_yiheTicket(cssIsMymark).html">我的易和券</a>
+							</li>
+							<li class="indivie_center_contentBig">会员资料 <img src="img/qx_myCount_img/arraw.png" /></li>
+							<li class="indivie_center_icon">
+								<a href="qx_private_information.html">个人资料</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_address_manage.html">地址管理</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_my_store.html">我的收藏</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_my_store.html">最近浏览</a>
+							</li>
+							<li class="indivie_center_icon">
+								<a href="qx_amend_password.html">修改密码</a>
+							</li>
+							<li class="indivie_center_contentBig">站内信 <img src="img/qx_myCount_img/arraw.png" /></li>
+							<li class="indivie_center_icon">
+								<a href="qx_my_message.html">我的消息</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="border col-sm-10 col-xs-10 border_orderer">
+					<!--❗️修改页面,先隐藏-->
+					<div class="myOrderer_intro ">
+						<div class="myOrderer_intro1">个人资料</div>
+						<ul class="amend_information">
+							<li class="portrait">当前头像:
+								<img src="img/timg.jpeg" />
+								<span class="change">修改</span>
+							</li>
+							<li class="private_nickname">昵称:
+								<span class="private_phone">15666688888</span>
+							</li>
+							<li class="private_sex">性别:
+								<input id="man" type="radio" checked="checked" name="1" />男<input id="woman" type="radio" name="1" />女
+							</li>
+							<li class="private_born">生日:
+								<span class="private_born_time">
+<select class="sel_year" rel="2013"> </select> 年 
+<select class="sel_month" rel="12"> </select> 月 
+<select class="sel_day" rel="12"> </select> 日 </span>
+							</li>
+							<li class="private_nickname">昵称:
+								<span class="private_phone">15666688888</span>
+								<span class="change_phone">更改手机</span>
+							</li>
+							<li class="private_submit">确认提交</li>
+						</ul>
+
+					</div>
+
+					<!--更换手机页面❗️-->
+					<div class="myOrderer_intro1" id="myOrderer_intro1" style="display: none;">
+						<div class="myOrderer_intro1">换绑手机</div>
+						<span class="cart_step">
+	<span id="cart_me" class="active">我的购物车</span>
+						<span id="cart_sure">确认订单信息</span>
+						<span id="cart_order">订单提交成功</span>
+						</span>
+						<ul class="amend_information">
+							<!--<li class="progress_check">
+								<p class="progress_check1">1,验证原手机号</p>
+								<p class="progress_check1_arraw1"></p>
+								<p class="progress_check2">2,获取验证码</p>
+								<p class="progress_check1_arraw2"></p>
+								<p class="progress_check3">3,换绑成功</p>
+							</li>-->
+
+							<li><input type="number" name="progress_checkPhone" id="progress_checkPhone" placeholder="当前手机号" />
+							</li>
+
+							<li><input id="progress_checkPhone1" placeholder="新手机号" style="display: none;" /></li>
+							<li class="portrait auth_code"><input type="text" id="auth_code1" placeholder="验证码" />
+								<img src="img/qx_myOrderer_img/auth_code.jpg" / id="code">
+								<span class="change1" id="change1">看不清楚,换一张</span>
+							</li>
+
+							<li class="phone_auth_code">
+								<input type="number" name="" id="phone_auth_code1" placeholder="手机验证码" />
+								<input class="searchButton" type="button" value="搜索" />
+
+							</li>
+							<li class="private_submit_correct">提交修改</li>
+						</ul>
+						<p class="congratulation" style="display: none;">恭喜你绑定成功!</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+
+	</body>
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/private_information_birthday.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			$.ms_DatePicker({
+				YearSelector: ".sel_year",
+				MonthSelector: ".sel_month",
+				DaySelector: ".sel_day"
+			});
+
+			$('.change_phone').click(function() {
+					$('.myOrderer_intro1').show();
+					$('.myOrderer_intro').hide();
+
+				})
+				//用下面的方法可以实现,写js很麻烦❗️
+				//	var num=1;
+				//$('.private_submit_correct').click(function(){
+				//	num++;
+				//	if(num%3==1){
+				//		
+				//	$('.progress_check1').css('background','red')
+				//	$('.progress_check1_arraw1').css({
+				//	'background-image':'url(img/qx_myOrderer_img/arraw_gray2.png)',
+				//	'background-repeat':'no-repeat'
+				//})
+				//	$('.progress_check2').css('background','#e6e6e6')
+				//	$('.progress_check3').css('background','#e6e6e6')
+				//	}else if(num%3==2){
+				//		$('.progress_check2').css('background','red')
+				//		$('.progress_check1').css('background','#e6e6e6')
+				//	$('.progress_check3').css('background','#e6e6e6')
+				//	}else if(num%3==0){
+				//		$('.progress_check3').css('background','red')
+				//		$('.progress_check2').css('background','#e6e6e6')
+				//	$('.progress_check1').css('background','#e6e6e6')
+				//	}
+				//})
+			
+			var newPhone = $('#progress_checkPhone1').val();
+			console.log($('#progress_checkPhone1').val())
+			$('.private_submit_correct').click(function() {
+//				var num = 1;
+//				num++
+//			} else if(num % 3 == 2) {
+             var reg = /^1\d{10}$/;
+				if($('#progress_checkPhone').val()==localStorage.phone_num1 && $('#progress_checkPhone1').val() == "") {
+					//如果输入的值等于存的值就进入第二个页面❗️
+					//出现新手机号的输入框 ***********❗️❗️
+					$('#progress_checkPhone').hide();
+					$('#progress_checkPhone1').show();
+					$('#auth_code1').val("");
+					$('#phone_auth_code1').val("")
+					$('.cart_step span').removeClass('active');
+					$("#cart_sure").addClass('active');
+				} else if(reg.test($('#progress_checkPhone1').val()) && ($('#progress_checkPhone1').val() != localStorage.phone_num1)) {
+					console.log("ddd456");
+					//这时让其能进入第三个绑定成功的页面❗️
+					//然后ajax请求改变数据库中的手机号码❗️❗️
+					$.ajax({
+						type: "get",
+						url: "myTicket.php",
+						async: true,
+						data: {
+							tab: 'updata',
+							newPhone: $('#progress_checkPhone1').val(),
+							phone: $('#progress_checkPhone').val()
+						},
+						success: function(data) {
+							console.log(data)
+						}
+
+					});
+					$('.cart_step span').removeClass('active');
+					$('#cart_order').addClass('active');
+					$('.amend_information').css('display', 'none');
+					$('.congratulation').css({
+						'display': 'block',
+						'color': 'red',
+						'position': 'absolute',
+						'left': '300px',
+						'top': '200px',
+						'fontSize': '30px'
+					});
+
+				} else {
+					//停留在原手机的页面❗️
+					$('.cart_step span').removeClass('active');
+					$('#cart_me').addClass('active');
+				}
+
+			})
+			$('.private_phone').html(localStorage.phone_num1).css('color', 'red');
+
+			$('.change1').click(function() {
+				tanchuang();
+			})
+			$('.searchButton').click(function() {
+				tanchuang()
+			});
+
+			function tanchuang() {
+				var layer = document.createElement("div");
+				var zi = '<p class="zi">验证码为:\
+	</p>'
+				layer.id = "layer";
+				var nums1 = [];
+				var style = {
+					background: "gray",
+					position: "absolute",
+					textAlign: 'center',
+					lineHeight: '50px',
+					fontSize: '30px',
+					color: 'black',
+					zIndex: 10,
+					width: "200px",
+					height: "100px",
+					left: "800px",
+					top: "380px"
+				}
+				for(var i in style)
+
+					layer.style[i] = style[i];
+				$(zi).appendTo(layer);
+				document.body.appendChild(layer);
+				$('.zi').css('color', 'red')
+					//注意p标签要在创建一次,不然浏览器无法读取❗️❗
+
+				while(nums1.length != 4) {
+					nums1.push([randomNum(0, 9)])
+				}
+				$('<p>' + nums1 + '</p>').appendTo(layer);
+
+				setTimeout('$(layer).remove()', 3000);
+
+			};
+
+			function randomNum(x, y) {
+				return Math.floor(Math.random() * (y - x + 1) + x);
+			}
+
+		});
+	</script>
+
+</html>

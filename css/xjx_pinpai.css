@@ -1,0 +1,94 @@
+.pointer {
+	cursor: pointer;
+}
+html {
+	cursor: default;
+}
+#footer,#header {
+	min-width: 1200px;
+}
+/*轮播*/
+.carousel {
+	height: 470px;
+}
+.carousel-inner,.home_lunbo {
+	height: 100%;
+}
+#home_Carousel .home_lunbo img {
+	width: 100%;
+	min-width: 1200px;
+	height: 100%;
+}
+#myCarousel .carousel-indicators li {
+	width: 15px;
+	height: 15px;
+	border: none;
+	background-color: black;
+}
+#myCarousel .carousel-indicators li.active {
+	background-color: #ff6c00;
+}
+/*内容*/
+.xjx_jifen .container {
+	min-width: 1200px;
+}
+.xjx_jifen {
+	width: 100%;
+	min-width: 1200px;
+	padding-bottom: 20px;
+	background-color: #eee;
+}
+.pinpai_shangjia {
+	padding: 20px;
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.home_goods {
+	font-size: 14px;
+	width: 270px;
+	cursor: pointer;
+}
+.home_goods.active {
+	background-color: white;
+}
+.home_goods img {
+	width: 100%;
+}
+.home_goods>div {
+	width: 270px;
+	height: 110px;
+	padding: 15px 10px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.home_goods .glyphicon {
+	color: #ff6c00;
+	margin-right: 5px;
+}
+/*页码*/
+.navigation_statistics_num {
+	width: 40px;
+	height: 30px;
+	border: 1px solid;
+	outline: none;
+	text-align: center;
+	margin: 0 10px;
+}
+.navigation_sure {
+	display: inline-block;
+	width: 75px;
+	height: 30px;
+	margin: 0 10px;
+	background: cornflowerblue;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+	border-radius: 5px;
+}
+.center-block {
+	text-align: center;
+}

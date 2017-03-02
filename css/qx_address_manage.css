@@ -1,0 +1,191 @@
+.container{
+	width: 1200px;
+	/*background: #f2f2f2;*/
+}
+.myOrderer_intro{
+	border: 1px solid;
+/*height: 400px;*/
+}
+.add_new_addrest{
+	width: 88px;
+	height: 28px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 28px;
+	background: orangered;
+	color: white;
+	border-radius: 8px;
+	position: absolute;
+	top: 15px;
+	right: 20px;
+}
+.address_content{
+	border-top: 1px solid;
+	height: 480px;
+	margin: 0 auto;
+}
+.address_content1{
+	width: 376px;
+	height: 56px;
+	text-align: center;
+	line-height: 56px;
+	margin-top: 220px;
+	margin-left: 318px;
+}
+.address_content1 img{
+	height: 40px;
+}
+.please_click{
+	font-size: 16px;
+	color: lightgray;
+}
+.add_address{
+	font-size: 30px;
+	color: indianred;
+}
+.address_new{
+	border-top: 1px solid;
+}
+#red_star1{
+	
+	margin-left: 40px
+}
+.address_new li{
+	font-size: 16px;
+	margin-top: 22px;
+	margin-left: 58px;
+}
+.address_new :first-child{
+	/*margin-left: 40px;*/
+}
+#red_star{
+	color: red;
+}
+.input_address{
+	height: 36px;
+}
+#address_name{
+	width: 332px;
+}
+#address_details{
+	width: 460px;
+}
+#address_phone{
+	width: 150px;
+}
+#phone_area{
+	width: 48px;
+}
+#phone_area1{
+	width: 126px;
+}
+.Default_address1{
+	display: block;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.private_submit{
+position: absolute;
+width: 170px;
+height: 46px;
+border-radius: 8px;
+color: white;
+text-align: center;
+line-height: 46px;
+background: orangered;	
+left: 72px;
+}
+.Default_address{
+	position: absolute;
+	top: 12px;
+	left: 37px;
+}
+#radio_button{
+	position: relative;
+	width: 220px;
+	height: 50px;
+}
+.circle{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	border: 1px solid;
+	position: absolute;
+	top: 14px;
+	left: 34px;
+}
+.area{
+	height: 36px;
+	width: 120px;
+	margin-right: 15px;
+}
+
+/*三级联动的样式写法*************/
+.ols{
+	position: relative;
+	background: blue;
+	left: 80px;
+	
+	
+	
+	
+		
+}
+.sheng{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 120px;
+	height: 200px;
+	/*background: red;*/
+	z-index: 2;
+	overflow: scroll;
+	
+}
+.ols p{
+width: 60px;
+/*height: 16px;*/
+/*background: blue;*/
+	
+}
+
+.shi{
+	position: absolute;
+	top: 0;
+	left: 140px;
+	width: 120px;
+	height: 200px;
+	/*background: red;*/
+	z-index: 2;
+	overflow: scroll;
+	
+}
+.xian{
+	position: absolute;
+	top: 0;
+	left: 280px;
+	width:120px;
+	height: 200px;
+	/*background: red;*/
+	z-index: 2;
+	overflow: scroll;
+	
+}
+
+
+/*//地址栏的样式设置(表格表单)*/
+.one_raw2{
+	background: lightgray;
+}
+.table tr th{ 
+text-align: center;
+line-height: 200px;
+
+}  
+.dele_btn{
+	color: red;
+}

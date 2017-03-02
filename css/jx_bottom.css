@@ -1,0 +1,74 @@
+.pointer {
+	cursor: pointer;
+}
+.jx_list {
+	height: 85px;
+	width: 100%;
+	background-color: #e2e2e2;
+}
+.container {
+	min-width: 1200px;
+	height: 100%;
+}
+.container>.jx_wrap {
+	display: flex;
+	justify-content: space-between;
+}
+.jx_list .container {
+	line-height: 85px;
+	font-size: 24px;
+	color: #666;
+}
+.jx_list .container img {
+	margin-right: 20px;
+}
+.jx_yhlife .container {
+	height: 191px;
+	margin-top: 30px;
+	margin-bottom: 26px;
+}
+.jx_erwei {
+	width: 320px;
+	display: flex;
+	justify-content: space-between;
+}
+.jx_erwei>span {
+	height: 175px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.jx_info {
+	height: 145px;
+	padding-left: 38px;
+	width: 504px;
+	border-left: 1px solid #d3d3d3;
+	box-sizing: content-box;
+	display: flex;
+	justify-content: space-between;
+}
+.jx_info h3 {
+	font-size: 18px;
+}
+.jx_info p {
+	font-size: 14px;
+}
+.jx_info p:hover {
+	color: #2784C7;
+}
+.jx_weixin,.jx_app {
+	margin: auto;
+	height: 48px;
+	line-height: 48px;
+}
+.jx_yihe img {
+	margin-top: 20px;
+}
+.jx_bottom {
+	border-top: 1px solid #d3d3d3;
+	padding: 40px 0;
+}
+.jx_bottom img {
+	display: block;
+	margin: auto;
+}

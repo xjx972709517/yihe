@@ -1,0 +1,139 @@
+.pointer {
+	cursor: pointer;
+}
+html {
+	cursor: default;
+}
+#footer,#header {
+	min-width: 1200px;
+}
+/*轮播*/
+.carousel {
+	height: 470px;
+}
+.carousel-inner,.home_lunbo {
+	height: 100%;
+}
+#home_Carousel .home_lunbo img {
+	width: 100%;
+	min-width: 1200px;
+	height: 100%;
+}
+#myCarousel .carousel-indicators li {
+	width: 15px;
+	height: 15px;
+	border: none;
+	background-color: black;
+}
+#myCarousel .carousel-indicators li.active {
+	background-color: #ff6c00;
+}
+/*内容*/
+.xjx_jifen .container {
+	min-width: 1200px;
+}
+.xjx_jifen {
+	width: 100%;
+	min-width: 1200px;
+	padding-bottom: 20px;
+	background-color: #eee;
+}
+
+.jingxuna_title {
+	height: 100px;
+	line-height: 100px;
+	border-bottom: 3px solid #008de1;
+}
+.jingxuan_text1 {
+	font-size: 36px;
+	color: #ff6c00;
+}
+.jingxuan_text2 {
+	font-size: 36px;
+	color: #008de1;
+}
+.jingxuan_text3 {
+	font-size: 18px;
+	color: #333;
+}
+
+.tejia_qianggou {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+.tejie_jiri {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.tejia_left,.tejia_right {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.tejia_left {
+	left: 0;
+}
+.tejia_right {
+	right: 0;
+}
+.tejia_qianggou .tejia_shangpin {
+	width: 280px;
+}
+.tejia_shangpin {
+	width: 220px;
+	background-color: white;
+	margin-bottom: 10px;
+	border: 1px solid #e1e1e1;
+}
+.tejia_shangpin.active {
+	border-color: #ff6c00;
+}
+.tejia_shangpin img {
+	width: 100%;
+}
+.tejia_xinxi {
+	padding: 20px;
+	width: 180px;
+	box-sizing: content-box;
+}
+.tejia_name {
+	font-size: 14px;
+	color: #666;
+	line-height: 1.8em;
+}
+.tejia_price {
+	margin-top: 20px;
+}
+.tejia_price>span {
+	font-size: 18px;
+	color: #f15555;
+}
+.tejia_price>s {
+	font-size: 14px;
+	color: #666;
+}
+/*页码*/
+.navigation_statistics_num {
+	width: 40px;
+	height: 30px;
+	border: 1px solid;
+	outline: none;
+	text-align: center;
+	margin: 0 10px;
+}
+.navigation_sure {
+	display: inline-block;
+	width: 75px;
+	height: 30px;
+	margin: 0 10px;
+	background: cornflowerblue;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+	border-radius: 5px;
+}
+.center-block {
+	text-align: center;
+}

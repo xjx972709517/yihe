@@ -1,0 +1,332 @@
+body {
+	background-color: #eee;
+}
+.pointer {
+	cursor: pointer;
+}
+.container {
+	min-width: 1200px;
+	height: 100%;
+}
+.xjx_area {
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	font-size: 12px;
+	color: #999;
+}
+.xjx_arealeft {
+	float: left;
+}
+.xjx_arealeft img {
+	vertical-align: middle;
+	margin-left: 5px;
+}
+.xjx_arearight {
+	width: 40%;
+	float: right;
+	display: flex;
+	justify-content: space-between;
+}
+.xjx_arearight>.pointer {
+	padding: 0 10px;
+}
+.xjx_line {
+	width: 1px;
+	height: 12px;
+	background-color: #999;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.xjx_yhlife {
+	width: 100%;
+	height: 176px;
+	background-color: white;
+	border-bottom: 2px solid #008de1;
+	box-sizing: border-box;
+}
+.xjx_yihe {
+	width: 100%;
+	margin: 26px 0 24px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.xjx_yhimg {
+	width: 164px;
+	height: 80px;
+}
+.xjx_yhimg img {
+	width: 100%;
+	height: 100%;
+}
+.xjx_btn {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.xjx_mine,.xjx_cart {
+	background-color: #f9f9f9;
+	border: 1px solid #d3d3d3;
+	color: #999;
+	padding: 10px;
+}
+.xjx_mine {
+	margin-right: 20px;
+}
+.xjx_btn .glyphicon {
+	color: #ff6c00;
+}
+.xjx_counts {
+	position: absolute;
+	right: 12px;
+	top: 12px;
+}
+.xjx_counts>span {
+	position: absolute;
+	left: 50%;
+	top: 2%;
+	transform: translateX(-50%);
+	color: white;
+}
+.xjx_text {
+	margin: 0 8px;
+}
+.xjx_middle {
+	position: relative;
+}
+.xjx_toggle {
+	font-size: 0;
+}
+.xjx_toggle>span {
+	display: inline-block;
+	font-size: 14px;
+	width: 50px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+.xjx_toggle>span:hover,.xjx_toggle .active {
+	background-color: #008de1;
+	color: white;
+}
+.xjx_input {
+	width: 500px;
+	position: relative;
+}
+.xjx_input>input {
+	width: 450px;
+	height: 30px;
+	outline: none;
+	padding-left: 10px;
+	border: 2px solid #008de1;
+	box-sizing: border-box;
+}
+.xjx_input>span {
+	width: 50px;
+	height: 30px;
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: #008de1;
+}
+.xjx_hot {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.xjx_hot>span {
+	float: left;
+	font-size: 12px;
+	margin-right: 15px;
+}
+.xjx_hot>span:first-child {
+	font-weight: bold;
+}
+
+.xjx_list {
+	width: 100%;
+	height: 44px;
+	box-sizing: content-box;
+	font-size: 16px;
+}
+.xjx_xiala {
+	width: 964px;
+	float: left;
+	height: 44px;
+	display: flex;
+	justify-content: space-between;
+}
+.xjx_xiala>span {
+	text-align: center;
+	width: 200px;
+	line-height: 44px;
+}
+.xjx_xiala>.active,.xjx_xiala>span:hover {
+	color: #ff6c00;
+}
+.xjx_fenlei {
+	height: 100%;
+	width: 175px;
+	line-height: 44px;
+	text-align: center;
+	background-color: #008de1;
+	color: white;
+	position: relative;
+}
+.xjx_wrap>img {
+	transform: rotate(180deg);
+	margin-left: 20px;
+	transition: all .5s;
+}
+.xjx_fenlei:hover .xjx_rotate img {
+	transform: rotate(0deg);
+}
+.xjx_kefu {
+	float: right;
+	height: 100%;
+	line-height: 44px;
+	position: relative;
+}
+.xjx_kefu>span {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.xjx_kefu>span:hover {
+	color: #ff6c00;
+}
+.xjx_hide {
+	display: none;
+}
+.xjx_contact{
+	width: 146px;
+	height: 266px;
+	position: absolute;
+	right: 0;
+	top: 46px;
+	z-index: 99;
+	background-color: white;
+	border: 1px solid #d3d3d3;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.xjx_contact:before,.xjx_contact:after{
+    content: "";  /*:before和:after必带技能，重要性为满5颗星*/
+	display: block;
+	position: absolute;  /*日常绝对定位*/
+    width: 0;
+    height: 0;
+    border:10px transparent solid;
+}
+.xjx_contact:before{
+    top:-19px;
+    left: 105px;
+    border-bottom-color: white;
+    z-index: 1;
+}
+.xjx_contact:after{
+	left: 105px;
+    top:-20px;
+    border-bottom-color: #d3d3d3;
+    z-index: 0;
+}
+.xjx_contact>span {
+	margin: 0 auto;
+}
+.xjx_contact>.pointer {
+	width: 125px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #ff6c00;
+	color: white;
+	border-radius: 5px;
+}
+.xjx_weixin img {
+	width: 125px;
+}
+
+.xjx_select {
+	width: 575px;
+	height: 468px;
+	position: absolute;
+	top: 44px;
+	left: 0;
+	display: none;
+	z-index: 999;
+}
+.xjx_left {
+	float: left;
+	width: 175px;
+	height: 100%;
+}
+.xjx_left>li {
+	width: 100%;
+	height: 52px;
+	font-size: 14px;
+	box-sizing: border-box;
+	background-color: #404040;
+	border-bottom: 1px solid #6a6a6a;
+}
+.xjx_left>li:hover {
+	background-color: #ff6c00;
+}
+.xjx_wrap {
+	width: 96px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+.xjx_wrap img {
+	width: 6px;
+	height: 11px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.xjx_wrap .xjx_arrow {
+	width: 15px;
+	height: 9px;
+	margin-right: -5px;
+}
+.xjx_right {
+	float: left;
+	height: 100%;
+	width: 400px;
+	font-size: 14px;
+	background-color: black;
+	opacity: .5;
+}
+.xjx_right>div {
+	display: none;
+}
+.xjx_right>.active {
+	display: block;
+}
+.xjx_con {
+	padding: 10px 20px 20px 40px;
+	text-align: left;
+}
+.xjx_con>div {
+	padding: 20px 0;
+	border-top: 1px dashed #999;
+}
+.xjx_con>div:first-child {
+	border: none;
+}
+.xjx_con span {
+	white-space: nowrap;
+	padding-right: 18px;
+	margin-right: 18px;
+	border-right: 1px solid white;
+}
+.xjx_con span:hover {
+	color: #ff6c00;
+}
+.xjx_con span:last-child {
+	margin-right: 0;
+}
